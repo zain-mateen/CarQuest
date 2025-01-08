@@ -30,7 +30,7 @@ const HeroSec = () => {
             </div>
             <div className='hero-form absolute left-0 bottom-14 w-full z-50 max-2xl:bottom-10 max-xl:relative max-xl:bottom-auto max-xl:mt-10'>
                 <div className="container">
-                <form className="flex items-center gap-5 bg-secondary rounded-3xl py-5 px-7 mx-auto max-w-[1300px] max-2xl:flex-col max-2xl:items-baseline max-xl:border max-xl:border-borderPrimary max-xl:gap-6 max-m:px-3 max-m:py-5 max-m:rounded-xl">
+                    <form className="flex items-center gap-5 bg-secondary rounded-3xl py-5 px-7 mx-auto max-w-[1300px] max-2xl:flex-col max-2xl:items-baseline max-xl:border max-xl:border-borderPrimary max-xl:gap-6 max-m:px-3 max-m:py-5 max-m:rounded-xl">
                         <TitleComponent size="large-semibold" className="hero2-heading text-white max-w-[150px] max-2xl:max-w-full">
                             Need to Rent a Luxury Car?
                         </TitleComponent>

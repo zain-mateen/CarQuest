@@ -53,28 +53,28 @@ export const HeroFormData = [
         type: 'text',
         id: 'name',
         placeholder: 'Enter Full Name',
-        additionalClasses: 'border-s border-gray-300 ps-5 max-2xl:border-s-0 max-2xl:ps-0 max-m:border-b max-m:pb-3',
+        additionalClasses: 'border-s border-gray-300 ps-5 max-2xl:border-s-0 max-2xl:ps-0',
     },
     {
         label: 'Number',
         type: 'number',
         id: 'number',
         placeholder: 'Enter Number',
-        additionalClasses: 'border-s border-gray-300 ps-5 max-m:border-b max-m:border-s-0 max-m:p-0 max-m:pb-3',
+        additionalClasses: 'border-s border-gray-300 ps-5 max-xl:p-0 max-xl:border-none',
     },
     {
         label: 'Pickup Location',
         type: 'text',
         id: 'location',
         placeholder: 'Enter Location',
-        additionalClasses: 'border-s border-gray-300 ps-5 max-xl:border-0 max-xl:p-0 max-m:border-b max-m:pb-3',
+        additionalClasses: 'border-s border-gray-300 ps-5 max-xl:border-0 max-xl:p-0',
     },
     {
         label: 'Pickup Date',
         type: 'date',
         id: 'date',
         placeholder: 'Enter Date',
-        additionalClasses: 'border-x border-gray-300 px-5 max-xl:border-r-0 max-m:border-b max-m:border-s-0 max-m:p-0 max-m:pb-3',
+        additionalClasses: 'border-x border-gray-300 px-5 max-xl:p-0 max-xl:border-none',
     },
 ];
 export const socialMediaLinks = [
