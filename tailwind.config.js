@@ -12,6 +12,8 @@ module.exports = {
         'l': '768px',
         'xl': '992px',
         '2xl': '1200px',
+        '3xl': '1400px',
+        'max-3xl': {'max': '1400px'},
         'max-2xl': {'max': '1200px'},
         'max-xl': {'max': '992px'},
         'max-l': {'max': '768px'},
@@ -22,21 +24,28 @@ module.exports = {
       backgroundColor: {
         transparent: 'transparent',
         primary: 'rgb(255, 54, 0)',
+        secondary: '#333333',
         white: '#FFFFFF',
+        white10: 'rgba(255, 255, 255, .1)',
         black: 'rgb(4, 4, 1)',
+        borderPrimary: '#333333',
       },
       colors: {
         transparent: 'transparent',
         primary: 'rgb(255, 54, 0)',
+        secondary: '#333333',
         white: '#FFFFFF',
         black: 'rgb(4, 4, 1)',
-        paragraphcolor: 'rgb(97, 97, 97)',
+        paragraphcolor: '#999999',
+        borderPrimary: '#333333',
       },
       borderColor: {
         transparent: 'transparent',
         primary: 'rgb(255, 54, 0)',
+        secondary: '#333333',
         white: '#FFFFFF',
         black: 'rgb(4, 4, 1)',
+        borderPrimary: '#333333',
       },
       borderRadius: {
         12: '12px',
@@ -52,25 +61,33 @@ module.exports = {
         'box-shadow': 'inset 0px 0px 25px rgba(229, 231, 235, 0.1)',
         'box-shadow2': 'inset 0px 0px 50px rgba(229, 231, 235, 0.1)',
       },
-      fontFamily: {
-        DMSans: '"DMSans", sans-serif'
-      }
+      backgroundImage: {
+        'hero-gradient': "linear-gradient(rgba(0, 0, 0, 0.5) 13.62%, rgba(0, 0, 0, 0.5) 68.99%), url('./images/hero-bg.webp')",
+        'footer-bg': "url('./images/footer-bg.svg')",
+        'video-bg': "url('./images/video-bg.jpg')",
+        'testimonial-bg': "url('./images/testimonial-bg.png')",
+        'cta-box-bg': "url('./images/cta-box-bg.svg')",
+        'choose-us-bg': "url('./images/why-choose-us-bg.svg')",
+        'custom-gradient': 'linear-gradient(220deg, rgba(249, 192, 119, 0) 0.73%, rgba(4, 4, 1, 0.49) 90.71%)',
+        'custom-gradient2': 'linear-gradient(180deg, rgba(0, 0, 0, 0) 2.8%, #000000 99.93%)',
+        'header-bg': "url('./images/page-header-bg.jpg')"
+      },
     },
   },
   plugins: [
-    {
-      "plugins": ["babel-plugin-macros"]
-    },
+    require('babel-plugin-macros'),
     function ({ addBase }) {
       addBase({
         body: {
           padding: "0",
           margin: "0",
-          fontFamily: '"DMSans", sans-serif',
+          fontFamily: 'ID Grotesk',
         },
         html: {
           padding: "0",
           margin: "0",
+          backgroundColor: "rgb(4, 4, 1)",
+          colors: "#FFFFFF"
         },
         '*': {
           boxSizing: "border-box",
@@ -127,6 +144,14 @@ module.exports = {
           "@media (max-width: 1200px)":{
             maxWidth: '100% !important',
             padding: '0 15px !important',
+          },
+        },
+        '.container-fluid': {
+          width: 'calc(100% - 100px)',
+          margin: 'auto',
+          "@media (max-width: 1400px)": {
+            width: '100%',
+            padding: '0 16px',
           },
         },
       });
