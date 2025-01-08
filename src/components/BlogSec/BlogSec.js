@@ -44,13 +44,13 @@ const BlogSec = () => {
                     headingStyles="blog-heading"
                 />
                 <div className="animate-fade grid grid-cols-2 grid-rows-3 gap-[30px] max-xl:grid-cols-1">
-                    <div className="relative rounded-[30px] row-span-3 overflow-hidden group">
+                    <div className="relative rounded-[30px] row-span-3 overflow-hidden group max-m:overflow-visible">
                         <ImageComponent 
                             src={Post1}
                             imageStyles='h-full'
-                            ImageWrapper='h-full'
+                            ImageWrapper='h-full max-m:h-auto max-m:rounded-[16px]'
                         />
-                        <div className="absolute bottom-[40px] left-[50px] max-w-[350px] z-10">
+                        <div className="absolute bottom-[40px] left-[50px] max-w-[350px] z-10 max-m:relative max-m:mt-6 max-m:left-0 max-m:bottom-0">
                             <div className="flex items-center gap-3 mb-[16px]">
                                 <CalendarX size={20} weight="fill" className="text-white" />
                                 <TitleComponent size="small-normal" className="text-white">
@@ -64,7 +64,7 @@ const BlogSec = () => {
                                 Top tips for booking your car rental: what you need to know
                             </TitleComponent>
                             <Link
-                                className="flex items-center justify-center w-[60px] h-[60px] bg-primary rounded-full text-white rotate-[-45deg] mt-4 transition-all group-hover:rotate-0"
+                                className="flex items-center justify-center w-[60px] h-[60px] bg-primary rounded-full text-white rotate-[-45deg] mt-4 transition-all group-hover:rotate-0 max-l:w-12 max-l:h-12"
                             >
                                 <ArrowRight size={24} weight="bold" />
                             </Link>
@@ -76,9 +76,9 @@ const BlogSec = () => {
                             className="flex items-center gap-[30px] group max-m:gap-[20px] max-m:flex-col"
                         >
                             <ImageComponent
-                                ImageWrapper='rounded-[16px]'
+                                ImageWrapper='rounded-[16px] max-m:w-full'
                                 src={image}
-                                imageStyles='!w-[200px] !h-[160px] object-cover rounded-[16px] max-m:w-full'
+                                imageStyles='!w-[200px] !h-[160px] object-cover rounded-[16px] max-m:!w-full max-m:!h-auto'
                                 alt={title}
                             />
                             <div className="flex-1">
