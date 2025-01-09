@@ -18,7 +18,7 @@ const ChooseSec = () => {
                     headingStyles="choose-heading"
                 />
                 <div className="grid grid-cols-3 items-center gap-6 max-xl:flex max-xl:flex-wrap max-xl:gap-x-0 max-xl:items-baseline max-xl:justify-center">
-                    <div className='animate-fade flex flex-col gap-6 max-xl:order-1 max-xl:w-1/2 max-xl:pr-4 max-l:w-full'>
+                    <div className='animate-fade flex flex-col gap-6 max-xl:order-1 max-xl:w-1/2 max-xl:pr-4 max-l:w-full max-m:p-0'>
                         {ChooseUsSecLeftData.map((item, index) => (
                             <AboutSecCart   
                                 afterStyles='after:w-10 after:h-10'  
@@ -32,7 +32,7 @@ const ChooseSec = () => {
                     <div className='animate-scale max-xl:order-3'>
                         <img src={ChooseUsImage} alt="Choose Us img" />
                     </div>
-                    <div className='animate-fade flex flex-col gap-6 max-xl:order-2 max-xl:w-1/2 max-xl:pl-4 max-l:w-full max-l:order-3'>
+                    <div className='animate-fade flex flex-col gap-6 max-xl:order-2 max-xl:w-1/2 max-xl:pl-4 max-l:w-full max-l:order-3 max-m:p-0'>
                         {ChooseUsSecRightData.map((item, index) => (
                             <AboutSecCart 
                                 afterStyles='after:w-10 after:h-10'  

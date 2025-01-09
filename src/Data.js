@@ -74,7 +74,7 @@ export const HeroFormData = [
         type: 'date',
         id: 'date',
         placeholder: 'Enter Date',
-        additionalClasses: 'border-x border-gray-300 px-5 max-xl:p-0 max-xl:border-none',
+        additionalClasses: 'w-full border-x border-gray-300 px-5 max-xl:p-0 max-xl:border-none',
     },
 ];
 export const features = [

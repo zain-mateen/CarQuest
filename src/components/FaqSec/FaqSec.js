@@ -11,7 +11,7 @@ const FaqSec = () => {
     return (
         <div className='bg-secondary py-24 max-xl:py-20 max-m:py-12'>
              <div className="container">
-                <div className="grid grid-cols-2 items-center gap-6 px-5 max-xl:flex max-xl:flex-col-reverse">
+                <div className="grid grid-cols-2 items-center gap-6 px-5 max-xl:flex max-xl:flex-col-reverse max-m:p-0">
                     <img className='animate-scale w-full' src={faqImage} alt="FAQ img" />
                     <div className='content'>
                         <SectionTitle 
