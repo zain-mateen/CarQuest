@@ -4,7 +4,7 @@ import Menu from './Menu';
 
 import brandLogo from '../../images/brand-logo.svg';
 import ThemeButton from '../ThemeButton/ThemeButton';
-import { FooterSocialData, menuData } from '../../Data';
+import { SocialLinkData, menuData } from '../../Data';
 import { useState } from 'react';
 
 const Header = () => {
@@ -110,7 +110,7 @@ const Header = () => {
                     <ThemeButton variant='secondary'>Book a Rental</ThemeButton>
                 </div>
                 <div className='flex items-center gap-5'>
-                    {FooterSocialData.map(({ Icon, to }, index) => (
+                    {SocialLinkData.map(({ Icon, to }, index) => (
                         <Link key={index} to={to} target='_blank' className='flex group'>
                             <Icon className='text-white group-hover:text-primary duration-300' size={32} />
                         </Link>

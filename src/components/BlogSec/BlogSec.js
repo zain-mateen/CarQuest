@@ -5,33 +5,10 @@ import SectionTitle from '../SectionTitle/SectionTitle';
 import TitleComponent from '../TitleComponent/TitleComponent';
 
 import Post1 from '../../images/post-1.webp';
-import Post2 from '../../images/post-2.webp';
-import Post3 from '../../images/post-3.webp';
-import Post4 from '../../images/post-4.webp';
 import ImageComponent from '../ImageConponent/ImageConponent';
+import { BlogPostData } from '../../Data';
 
 const BlogSec = () => {
-    const posts = [
-        {
-            id: 1,
-            image: Post2,
-            date: 'August 5, 2024',
-            title: 'Exploring your rental car options: sedan, suv, or convertible?'
-        },
-        {
-            id: 2,
-            image: Post3,
-            date: 'August 5, 2024',
-            title: 'The pros and cons of renting a car vs. using rideshare services'
-        },
-        {
-            id: 3,
-            image: Post4,
-            date: 'August 5, 2024',
-            title: 'Why you should consider renting a luxury car for your next trip'
-        }
-    ];
-
     return (
         <div className="py-24 max-xl:py-20 max-m:py-12">
             <div className="container">
@@ -70,31 +47,31 @@ const BlogSec = () => {
                             </Link>
                         </div>
                     </div>
-                    {posts.map(({ id, image, date, title }) => (
+                    {BlogPostData.map((post, index) => (
                         <Link
-                            key={id}
+                            key={index}
                             className="flex items-center gap-[30px] group max-m:gap-[20px] max-m:flex-col"
                         >
                             <ImageComponent
                                 ImageWrapper='rounded-[16px] max-m:w-full'
-                                src={image}
+                                src={post.image}
                                 imageStyles='!w-[200px] !h-[160px] object-cover rounded-[16px] max-m:!w-full max-m:!h-auto'
-                                alt={title}
+                                alt={post.title}
                             />
                             <div className="flex-1">
                                 <div className="flex items-center gap-3 mb-[16px]">
                                     <CalendarX className="text-paragraphcolor" size={20} weight="fill" />
                                     <TitleComponent size="small-normal" className="text-paragraphcolor">
-                                        {date}
+                                        {post.date}
                                     </TitleComponent>
                                 </div>
                                 <TitleComponent
                                     size="extra-large-semibold"
                                     className="capitalize text-white"
                                 >
-                                    {title}
+                                    {post.title}
                                 </TitleComponent>
-                                <Link className="flex items-center gap-3 mt-4">
+                                <Link className="flex items-center gap-3 mt-4" to='/'>
                                     <TitleComponent
                                         size="small-semibold"
                                         className="text-primary group-hover:text-white"

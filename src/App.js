@@ -6,6 +6,7 @@ import LoaderComponent from './components/LoaderComponent/LoaderComponent';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Home from './pages/Home';
+import ProgressBar from './components/ProgressBar/ProgressBar';
 
 import './App.css';
 
@@ -24,6 +25,7 @@ function App() {
   return (
     <>
       <ScrollToTop/>
+      <ProgressBar/>
       {loading ? (
         <LoaderComponent/>
       ) : (

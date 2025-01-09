@@ -40,9 +40,7 @@ const HeroSec = () => {
                                     <ThemeInput key={index} {...field} />
                                 ))}
                             </div>
-                            <div>
-                                <ThemeButton variant="primary">Send</ThemeButton>
-                            </div>
+                            <ThemeButton variant="primary">Send</ThemeButton>
                         </div>
                     </form>
                 </div>

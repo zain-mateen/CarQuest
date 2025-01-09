@@ -122,12 +122,12 @@ const Animation = ({ children }) => {
             gsap.fromTo(element,
                 {
                     y: 50,
-                    filter: 'blur(3px)',
+                    scale: 0.9,
                     opacity: 0,
                 },
                 {
                     y: 0,
-                    filter: 'blur(0px)',
+                    scale: 1,
                     opacity: 1,
                     duration: 0.8,
                     scrollTrigger: {

@@ -77,11 +77,6 @@ export const HeroFormData = [
         additionalClasses: 'border-x border-gray-300 px-5 max-xl:p-0 max-xl:border-none',
     },
 ];
-export const socialMediaLinks = [
-    { Icon: FacebookLogo, to: "/" },
-    { Icon: InstagramLogo, to: "/" },
-    { Icon: YoutubeLogo, to: "/" },
-];
 export const features = [
     {
         icon: PhoneIcon,
@@ -94,12 +89,12 @@ export const features = [
         description: "We Have Optimized The Booking Process So That Our Clients Can Experience The Easiest And The Safest Service",
     }
 ];
-export const FooterSocialData = [
-    { Icon: YoutubeLogo, to: 'https://www.youtube.com/' },
-    { Icon: FacebookLogo, to: 'https://www.facebook.com/', },
-    { Icon: TwitterLogo, to: 'https://x.com/' },
-    { Icon: InstagramLogo, to: 'https://www.instagram.com/' },
-    { Icon: LinkedinLogo, to: 'https://www.linkedin.com/' }
+export const SocialLinkData = [
+    { id:'youtube-logo', Icon: YoutubeLogo, to: 'https://www.youtube.com/' },
+    { id:'facebook-logo', Icon: FacebookLogo, to: 'https://www.facebook.com/', },
+    { id:'twitter-logo', Icon: TwitterLogo, to: 'https://x.com/' },
+    { id:'instagram-logo', Icon: InstagramLogo, to: 'https://www.instagram.com/' },
+    { id:'linkedin-logo', Icon: LinkedinLogo, to: 'https://www.linkedin.com/' }
 ];
 export const CarData = [
     {
@@ -672,3 +667,20 @@ export const FaqData = {
         },
     ],
 };
+export const BlogPostData = [
+    {
+        image: require('./images/post-2.webp'),
+        date: 'August 5, 2024',
+        title: 'Exploring your rental car options: sedan, suv, or convertible?'
+    },
+    {
+        image: require('./images/post-3.webp'),
+        date: 'August 5, 2024',
+        title: 'The pros and cons of renting a car vs. using rideshare services'
+    },
+    {
+        image: require('./images/post-4.webp'),
+        date: 'August 5, 2024',
+        title: 'Why you should consider renting a luxury car for your next trip'
+    }
+]

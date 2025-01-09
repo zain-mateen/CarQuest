@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FooterSocialData } from '../../Data';
+import { SocialLinkData } from '../../Data';
 import TitleComponent from '../TitleComponent/TitleComponent';
 import brandLogo from '../../images/brand-logo.svg'
 
@@ -14,7 +14,7 @@ const Footer = () => {
                     Experience the ease and convenience of renting a car with Novaride.
                 </TitleComponent>
                 <div className='flex items-center gap-5'>
-                    {FooterSocialData.map(({ Icon, to }, index) => (
+                    {SocialLinkData.map(({ Icon, to }, index) => (
                         <Link key={index} to={to} target='_blank' className='flex group'>
                             <Icon className='text-white group-hover:text-primary duration-300' size={32} />
                         </Link>
