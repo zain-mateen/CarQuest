@@ -7,7 +7,7 @@ const ThemeInput = ({ label, type, id, placeholder, additionalClasses }) => {
                 {label}
             </label>
             <input 
-                className="text-sm font-semibold py-2 px-3 duration-300 rounded-full outline-none bg-black text-white placeholder:text-paragraphcolor focus:outline-none focus:border-white/[20%]" 
+                className="text-sm font-semibold py-2 px-3 w-full duration-300 rounded-full outline-none bg-black text-white placeholder:text-paragraphcolor focus:outline-none focus:border-white/[20%]" 
                 type={type} 
                 id={id} 
                 placeholder={placeholder} 

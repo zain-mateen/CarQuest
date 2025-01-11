@@ -5,10 +5,16 @@ import ThemeButton from '../ThemeButton/ThemeButton';
 import { features } from '../../Data';
 
 import AboutImage from '../../images/about-img.webp';
+import MarqueeSlider from '../MarqueeSlider/MarqueeSlider';
 
 const AboutSection = () => {
     return (
-        <div className='py-32 max-xl:py-20 max-m:py-12'>
+        <div className='relative py-32 max-xl:py-20 max-m:py-12 overflow-hidden'>
+            <MarqueeSlider 
+                MarqueeText='NovaRide'
+                MarqueeWrapper='absolute -top-4 max-m:top-0'
+                MarqueeTextStyles='text-[200px] font-black leading-[150px] max-m:text-[72px] max-m:leading-[72px] backdrop-blur-sm opacity-15'
+            />
             <div className="container">
                 <div className="flex items-center gap-6 max-xl:flex-col">
                     <div className='animate-scale w-1/2 pe-10 max-xl:p-0 max-m:w-full'>
