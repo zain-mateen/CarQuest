@@ -9,7 +9,7 @@ const ServiceCart = ({ data }) => {
     return (
         <Link to={`/service/${data.id}`} className="animate-fade py-6 px-8 bg-black rounded-[20px] border border-white/[30%] relative overflow-hidden group max-2xl:px-5 ">
             <div 
-                className='absolute bottom-[-100%] left-0 w-full h-full bg-primary origin-bottom transition-all duration-500 group-hover:bottom-0 max-m:hidden'
+                className='absolute bottom-[-100%] left-0 w-full h-full bg-primary origin-bottom transition-all duration-500 group-hover:bottom-0'
             />
             <div className="relative z-2">
                 <div className="relative mb-10 transition-all duration-300 max-2xl:mb-8">
@@ -22,10 +22,10 @@ const ServiceCart = ({ data }) => {
                     <TitleComponent size='base-normal' className='text-white transition-all duration-300 ease-in-out hover:text-primary group-hover:text-white max-m:text-xl'>
                         {data.heading}
                     </TitleComponent>
-                    <TitleComponent size='small-normal' className='text-paragraphcolor mt-3 transition-all duration-300 ease-in-out sm:group-hover:text-white'>
+                    <TitleComponent size='small-normal' className='text-paragraphcolor mt-3 transition-all duration-300 ease-in-out group-hover:text-white'>
                         {data.description || 'Default description'}
                     </TitleComponent>
-                    <button className='flex items-center justify-center w-14 h-14 bg-primary rounded-full text-white rotate-[-45deg] mt-4 transition-all duration-500 sm:group-hover:bg-black group-hover:rotate-0 max-2xl:w-10 max-2xl:h-10'>
+                    <button className='flex items-center justify-center w-14 h-14 bg-primary rounded-full text-white rotate-[-45deg] mt-4 transition-all duration-500 group-hover:bg-black group-hover:rotate-0 max-2xl:w-10 max-2xl:h-10'>
                         <ArrowRight size={24} weight='bold' className='max-2xl:w-[18px]' />
                     </button>
                 </div>

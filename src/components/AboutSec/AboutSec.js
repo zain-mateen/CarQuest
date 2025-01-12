@@ -10,11 +10,18 @@ import MarqueeSlider from '../MarqueeSlider/MarqueeSlider';
 const AboutSection = () => {
     return (
         <div className='relative py-32 max-xl:py-20 max-m:py-12 overflow-hidden'>
-            <MarqueeSlider 
-                MarqueeText='NovaRide'
-                MarqueeWrapper='absolute -top-4 max-m:top-0'
-                MarqueeTextStyles='text-[200px] font-black leading-[150px] max-m:text-[72px] max-m:leading-[72px] backdrop-blur-sm opacity-15'
-            />
+            <div className='flex flex-col gap-2 absolute top-10 w-full overflow-hidden'>
+                <MarqueeSlider 
+                    MarqueeText='About Us'
+                    initialDirection={1}
+                    MarqueeTextStyles='text-[60px] font-black leading-[60px] max-m:text-[72px] max-m:leading-[72px] opacity-5'
+                />
+                <MarqueeSlider 
+                    MarqueeText='About Us'
+                    initialDirection={-1}
+                    MarqueeTextStyles='text-[60px] font-black leading-[60px] max-m:text-[72px] max-m:leading-[72px] opacity-5'
+                />
+            </div>
             <div className="container">
                 <div className="flex items-center gap-6 max-xl:flex-col">
                     <div className='animate-scale w-1/2 pe-10 max-xl:p-0 max-m:w-full'>

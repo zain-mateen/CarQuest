@@ -3,11 +3,24 @@ import SectionTitle from '../SectionTitle/SectionTitle'
 import ThemeButton from '../ThemeButton/ThemeButton'
 
 import img from '../../images/cta-car-img.webp'
+import MarqueeSlider from '../MarqueeSlider/MarqueeSlider'
 
 const CtaSec = () => {
     return (
-        <div className='bg-secondary bg-cta-box-bg bg-cover bg-no-repeat bg-center py-24 max-xl:py-20 max-m:py-12'>
-            <div className="container">
+        <div className='relative bg-secondary bg-cta-box-bg bg-cover bg-no-repeat bg-center py-24 max-xl:py-20 max-m:py-12'>
+            <div className='flex flex-col gap-2 absolute top-0 left-0 py-3 h-full justify-between w-full overflow-hidden'>
+                <MarqueeSlider 
+                    MarqueeText="Let's Connect"
+                    initialDirection={1}
+                    MarqueeTextStyles='text-[16px] font-black !capitalize leading-[24px] opacity-30'
+                />
+                <MarqueeSlider 
+                    MarqueeText="Let's Connect"
+                    initialDirection={-1}
+                    MarqueeTextStyles='text-[16px] font-black !capitalize leading-[24px] opacity-30'
+                />
+            </div>
+            <div className="container relative z-10">
                 <div className='grid grid-cols-2 items-center gap-6 max-l:grid-cols-1'>
                     <div className='pr-24 max-3xl:p-0'>
                         <SectionTitle 
