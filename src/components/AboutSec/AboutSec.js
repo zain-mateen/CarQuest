@@ -10,16 +10,16 @@ import MarqueeSlider from '../MarqueeSlider/MarqueeSlider';
 const AboutSection = () => {
     return (
         <div className='relative py-32 max-xl:py-20 max-m:py-12 overflow-hidden'>
-            <div className='flex flex-col gap-2 absolute top-10 w-full overflow-hidden'>
+            <div className='flex flex-col gap-2 absolute top-10 w-full overflow-hidden opacity-10'>
                 <MarqueeSlider 
                     MarqueeText='About Us'
                     initialDirection={1}
-                    MarqueeTextStyles='text-[60px] font-black leading-[60px] max-m:text-[24px] max-m:leading-[24px] opacity-5'
+                    MarqueeTextStyles='text-[60px] font-black leading-[60px] max-m:text-[24px] max-m:leading-[24px]'
                 />
                 <MarqueeSlider 
                     MarqueeText='About Us'
                     initialDirection={-1}
-                    MarqueeTextStyles='text-[60px] font-black leading-[60px] max-m:text-[24px] max-m:leading-[24px] opacity-5'
+                    MarqueeTextStyles='text-[60px] font-black leading-[60px] max-m:text-[24px] max-m:leading-[24px]'
                 />
             </div>
             <div className="container">
