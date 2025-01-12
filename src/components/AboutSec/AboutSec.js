@@ -14,12 +14,12 @@ const AboutSection = () => {
                 <MarqueeSlider 
                     MarqueeText='About Us'
                     initialDirection={1}
-                    MarqueeTextStyles='text-[60px] font-black leading-[60px] max-m:text-[72px] max-m:leading-[72px] opacity-5'
+                    MarqueeTextStyles='text-[60px] font-black leading-[60px] max-m:text-[24px] max-m:leading-[24px] opacity-5'
                 />
                 <MarqueeSlider 
                     MarqueeText='About Us'
                     initialDirection={-1}
-                    MarqueeTextStyles='text-[60px] font-black leading-[60px] max-m:text-[72px] max-m:leading-[72px] opacity-5'
+                    MarqueeTextStyles='text-[60px] font-black leading-[60px] max-m:text-[24px] max-m:leading-[24px] opacity-5'
                 />
             </div>
             <div className="container">

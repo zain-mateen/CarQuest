@@ -5,7 +5,7 @@ const SectionTitle = ({left, wrapperStyles, titleWrapperStyles, title, titleStyl
     return (
         <div className={`${left ? "text-left" : "text-center"} ${wrapperStyles}`}>
             {title && <div className={`inline-flex items-center overflow-hidden ${left ? "justify-start" : "justify-center"}`}> 
-                <div className={`inline-flex items-center gap-3 mb-4 py-2 px-3  backdrop-blur rounded ${titleBg ? "bg-white/[20%]" : "bg-white/[20%]"} ${left ? "justify-start" : "justify-center"} ${titleWrapperStyles}`}>
+                <div className={`inline-flex items-center gap-3 mb-4 py-2 px-3 max-m:mb-2 backdrop-blur rounded ${titleBg ? "bg-white/[20%]" : "bg-white/[20%]"} ${left ? "justify-start" : "justify-center"} ${titleWrapperStyles}`}>
                     <p className={`text-sm font-semibold ${titleText ? "text-white" : "text-white" } ${titleStyles}`}>
                         {title}
                     </p>
@@ -17,7 +17,7 @@ const SectionTitle = ({left, wrapperStyles, titleWrapperStyles, title, titleStyl
                 </TitleComponent>
             }
             {description && TitleComponent &&
-                <TitleComponent size={descriptionType} className={`mt-6 mb-10 ${descriptionStyles}`}>
+                <TitleComponent size={descriptionType} className={`mt-6 mb-10 max-m:mt-4 max-m:mb-6 ${descriptionStyles}`}>
                     {description}
                 </TitleComponent>
             }
