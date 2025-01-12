@@ -10,7 +10,7 @@ const Footer = () => {
             <footer className='relative pt-12 pb-10 bg-footer-bg bg-center bg-no-repeat bg-cover max-m:pt-10 max-m:pb-6'>
                 <div className='flex flex-col gap-2 absolute top-1/2 -translate-y-1/2 w-full overflow-hidden max-m:hidden'>
                     <MarqueeSlider 
-                        MarqueeText='novaride'
+                        MarqueeText='carquest'
                         initialDirection={1}
                         MarqueeTextStyles='text-[200px] font-black leading-[200px] opacity-5'
                     />
@@ -21,7 +21,7 @@ const Footer = () => {
                             <img className='w-auto h-[24px] max-m:h-[32px] object-contain' src={brandLogo} alt="Brand Logo" />
                         </Link>
                         <TitleComponent size='small-normal' className='text-white/[75%]'>
-                            Experience the ease and convenience of renting a car with Novaride.
+                            Experience the ease and convenience of renting a car with CarQuest.
                         </TitleComponent>
                         <div className='flex items-center gap-5'>
                             {SocialLinkData.map(({ Icon, to }, index) => (
@@ -37,7 +37,7 @@ const Footer = () => {
                 <TitleComponent size='small-normal' className='text-white/[75%]'>
                     © 2024 
                     <Link className='inline mx-1 font-bold text-white hover:text-primary' to='/'>
-                        NovaRide.
+                        CarQuest.
                     </Link>
                     All rights reserved.
                 </TitleComponent>

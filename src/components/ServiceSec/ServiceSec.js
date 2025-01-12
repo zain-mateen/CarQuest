@@ -23,11 +23,11 @@ const ServiceSec = () => {
                         <ServiceCart key={index} data={data} />
                     ))}
                 </div>
-                <div className='max-w-[600px] mx-auto mt-12 text-center max-m:mt-8'>
-                    <TitleComponent size='small-normal' className='animate-fade text-paragraphcolor mb-5'>
+                <div className='animate-fade max-w-[600px] mx-auto mt-12 text-center max-m:mt-8'>
+                    <TitleComponent size='small-normal' className='text-paragraphcolor mb-5'>
                         Discover our range of car rental services designed to meet all your travel needs. From a diverse fleet of vehicles to flexible rental plans.
                     </TitleComponent>
-                    <ThemeButton className="animate-fade" variant='primary'>View All Services</ThemeButton>
+                    <ThemeButton variant='primary'>View All Services</ThemeButton>
                 </div>
             </div>
         </div>
