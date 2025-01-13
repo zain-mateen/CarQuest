@@ -1,12 +1,18 @@
 import { CaretDown, FacebookLogo, InstagramLogo, LinkedinLogo, Star, TwitterLogo, YoutubeLogo } from "phosphor-react"
 import { ServiceIcon1, ServiceIcon2, ServiceIcon3, ServiceIcon4, ServiceIcon5, ServiceIcon6, ServiceIcon7, ServiceIcon8, ChooseUsIcon1, ChooseUsIcon2, ChooseUsIcon3, ChooseUsIcon4, PhoneIcon, CarIcon } from "./components/SvgIcons/SvgIcons";
 
-import partnerLogo1 from './images/client-logo-1.svg';
-import partnerLogo2 from './images/client-logo-2.svg';
-import partnerLogo3 from './images/client-logo-3.svg';
-import partnerLogo4 from './images/client-logo-4.svg';
-import partnerLogo5 from './images/client-logo-5.svg';
-import partnerLogo6 from './images/client-logo-6.svg';
+import companyLogo1 from './images/client-logo-1.svg';
+import companyLogo2 from './images/client-logo-2.svg';
+import companyLogo3 from './images/client-logo-3.svg';
+import companyLogo4 from './images/client-logo-4.svg';
+import companyLogo5 from './images/client-logo-5.svg';
+import companyLogo6 from './images/client-logo-6.svg';
+
+import ParterIcon1 from './images/partner-logo-1.svg';
+import ParterIcon2 from './images/partner-logo-2.svg';
+import ParterIcon3 from './images/partner-logo-3.svg';
+import ParterIcon4 from './images/partner-logo-4.svg';
+
 
 export const menuData = [
     {
@@ -15,7 +21,7 @@ export const menuData = [
     },
     {
         label: 'About Us',
-        path: '/',
+        path: '/about',
     },
     {
         label: 'Service',
@@ -269,19 +275,19 @@ export const CarData = [
         price: '128',
     },
 ];
-export const PartnerLogos = [
-    { logoImage: partnerLogo1, logoText: 'Mercedes-Benz', },
-    { logoImage: partnerLogo2, logoText: 'Audi', },
-    { logoImage: partnerLogo3, logoText: 'Jaquar', },
-    { logoImage: partnerLogo4, logoText: 'Volkswagon', },
-    { logoImage: partnerLogo5, logoText: 'Acura', },
-    { logoImage: partnerLogo6, logoText: 'Honda', },
-    { logoImage: partnerLogo1, logoText: 'Mercedes-Benz', },
-    { logoImage: partnerLogo2, logoText: 'Audi', },
-    { logoImage: partnerLogo3, logoText: 'Jaquar', },
-    { logoImage: partnerLogo4, logoText: 'Volkswagon', },
-    { logoImage: partnerLogo5, logoText: 'Acura', },
-    { logoImage: partnerLogo6, logoText: 'Honda', },
+export const CompanyLogos = [
+    { logoImage: companyLogo1, logoText: 'Mercedes-Benz', },
+    { logoImage: companyLogo2, logoText: 'Audi', },
+    { logoImage: companyLogo3, logoText: 'Jaquar', },
+    { logoImage: companyLogo4, logoText: 'Volkswagon', },
+    { logoImage: companyLogo5, logoText: 'Acura', },
+    { logoImage: companyLogo6, logoText: 'Honda', },
+    { logoImage: companyLogo1, logoText: 'Mercedes-Benz', },
+    { logoImage: companyLogo2, logoText: 'Audi', },
+    { logoImage: companyLogo3, logoText: 'Jaquar', },
+    { logoImage: companyLogo4, logoText: 'Volkswagon', },
+    { logoImage: companyLogo5, logoText: 'Acura', },
+    { logoImage: companyLogo6, logoText: 'Honda', },
 ];
 export const TestimonialData = [
     {
@@ -683,4 +689,24 @@ export const BlogPostData = [
         date: 'August 5, 2024',
         title: 'Why you should consider renting a luxury car for your next trip'
     }
-]
+];
+export const DriversData = [
+    { image: require('./images/team-1.webp'), heading: 'John Smith', text: 'Senior Chauffeur', },
+    { image: require('./images/team-2.webp'), heading: 'Taylor Smith', text: 'City Tour Guide', },
+    { image: require('./images/team-3.webp'), heading: 'Jordan Brown', text: 'Distance Driver', },
+    { image: require('./images/team-4.webp'), heading: 'Davis Casey', text: 'Travel Specialist', },
+    { image: require('./images/team-5.webp'), heading: 'Morgan Lee', text: 'Travel Consultant', },
+    { image: require('./images/team-6.webp'), heading: 'Carlos Mendes', text: 'Airport Transfer', },
+    { image: require('./images/team-7.webp'), heading: 'Riley Walker', text: 'Executive Chauffeur', },
+    { image: require('./images/team-8.webp'), heading: 'Avery Hall', text: 'Shuttle Driver', },
+];
+export const partnerSecData = [
+    { icon: ParterIcon1, },
+    { icon: ParterIcon2, },
+    { icon: ParterIcon3, },
+    { icon: ParterIcon4, },
+    { icon: ParterIcon3, },
+    { icon: ParterIcon4, },
+    { icon: ParterIcon1, },
+    { icon: ParterIcon2, },
+];

@@ -3,7 +3,7 @@ import { Play } from 'phosphor-react';
 
 import SectionTitle from '../SectionTitle/SectionTitle';
 import VideoSlider from './VideoSlider';
-import { PartnerLogos } from '../../Data';
+import { CompanyLogos } from '../../Data';
 
 import Image from '../../images/video-img.png'
 import { Link } from 'react-router-dom';
@@ -38,7 +38,7 @@ const VideoSec = () => {
                 </div>
             </div>
             <div className='animate-fade border-t border-white/[25%]'>
-                <VideoSlider data={PartnerLogos} />
+                <VideoSlider data={CompanyLogos} />
             </div>
         </div>
     );

@@ -70,7 +70,7 @@ module.exports = {
         'choose-us-bg': "url('./images/why-choose-us-bg.svg')",
         'custom-gradient': 'linear-gradient(220deg, rgba(249, 192, 119, 0) 0.73%, rgba(4, 4, 1, 0.49) 90.71%)',
         'custom-gradient2': 'linear-gradient(180deg, rgba(0, 0, 0, 0) 2.8%, #000000 99.93%)',
-        'header-bg': "url('./images/page-header-bg.jpg')"
+        'header-bg': "url('./images/page-header-bg.webp')"
       },
     },
   },

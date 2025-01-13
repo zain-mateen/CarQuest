@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import ScrollToTop from './components/scroll-to-top/scroll-to-top';
 import Animation from './pages/animation';
 import LoaderComponent from './components/LoaderComponent/LoaderComponent';
@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import ProgressBar from './components/ProgressBar/ProgressBar';
 
 import './App.css';
+import AboutPage from './pages/AboutPage';
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -31,7 +32,10 @@ function App() {
       ) : (
         <Animation>
           <Header />
-          <Home />
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path='/about' element={<AboutPage />} />
+          </Routes>
           <Footer />
         </Animation>
       )}
