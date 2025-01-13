@@ -7,9 +7,9 @@ import { features } from '../../Data';
 import AboutImage from '../../images/about-img.webp';
 import MarqueeSlider from '../MarqueeSlider/MarqueeSlider';
 
-const AboutSection = () => {
+const AboutSection = ({aboutSecStyles, aboutHeadingClass}) => {
     return (
-        <div className='relative py-32 max-xl:py-20 max-m:py-12 overflow-hidden'>
+        <div className={`relative py-32 max-xl:py-20 max-m:py-12 overflow-hidden ${aboutSecStyles}`}>
             <div className='flex flex-col gap-2 absolute top-10 w-full overflow-hidden opacity-10'>
                 <MarqueeSlider 
                     MarqueeText='About Us'
@@ -33,7 +33,7 @@ const AboutSection = () => {
                             title="About Us"
                             titleWrapperStyles="animate-fade"
                             headingType="h2"
-                            headingStyles='about-heading text-white'
+                            headingStyles={`${aboutHeadingClass ? aboutHeadingClass : "about-heading"} text-white`}
                             heading="Your trusted partner in reliable car rental"
                             descriptionType="small-normal"
                             descriptionStyles='animate-fade text-paragraphcolor'

@@ -139,8 +139,12 @@ const Animation = ({ children }) => {
             );
         });
         headerAnimation(".header");
+        scaleAnimation(".inner-header", 0.5);
+        animateText(".inner-header-heading", 1.5);
+        slideUpAnimation(".bread-crumbs", 1.8);
+        slideUpAnimation(".about-page-sec", 2.1);
         scaleAnimation(".hero-sec", 0.5);
-        slideUpAnimation(".hero1-title", 1.5)
+        slideUpAnimation(".hero1-title", 1.5);
         animateText(".hero1-heading", 1.7);
         slideUpAnimation(".hero1-desc", 1.9);
         slideUpAnimation(".hero1-button", 2.1);
@@ -155,6 +159,13 @@ const Animation = ({ children }) => {
         animateText(".testimonial-heading");
         animateText(".cta-heading");
         animateText(".blog-heading");
+        animateText(".partner-heading");
+        animateText(".vision-heading");
+        animateText(".tab-heading0");
+        animateText(".tab-heading1");
+        animateText(".tab-heading2");
+        animateText(".about-video-heading");
+        animateText(".drivers-heading");
         return () => {
             ScrollTrigger.getAll().forEach(trigger => trigger.kill());
         };

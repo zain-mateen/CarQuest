@@ -20,11 +20,13 @@ const VideoSec2 = () => {
                 <SectionTitle 
                     wrapperStyles='max-w-[700px] mx-auto mb-12 max-m:mb-8'
                     title='Watch Our Video'
+                    titleWrapperStyles="animate-fade"    
                     heading='Discover what sets us apart in the car rental industry'
+                    headingStyles="about-video-heading"
                     headingType='h2'
                 />
                 <div className="grid grid-cols-3 gap-6 max-l:grid-cols-1 max-l:gap-x-0">
-                    <div className='relative rounded-[20px] max-l:h-80 overflow-hidden'>
+                    <div className='animate-fade relative rounded-[20px] max-l:h-80 overflow-hidden'>
                         <img className='w-full h-full object-cover' src={VideoImage1} alt="video img" />
                         <div className="absolute top-10 left-12 max-2xl:top-5 max-2xl:left-6">
                             <p className='text-[40px] font-semibold text-white'>3100+</p>
@@ -48,7 +50,7 @@ const VideoSec2 = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className='relative col-span-2'>
+                    <div className='animate-fade relative col-span-2'>
                         <img className='w-full h-auto object-cover rounded-[20px]' src={VideoImage2} alt="video img" />
                         <div className="absolute -bottom-14 right-0 max-2xl:-bottom-12 max-xl:-bottom-10 max-m:-bottom-6">
                             <Link className='flex items-center justify-center w-28 h-28 bg-primary rounded-full border-[12px] border-[#FFF8F6] max-2xl:w-24 max-2xl:h-24 max-2xl:border-8 max-xl:w-20 max-xl:h-20 max-m:w-12 max-m:h-12 max-m:border-4' to='/'>

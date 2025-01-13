@@ -103,10 +103,12 @@ const VisionSec = () => {
                 <div className="max-w-[750px] mx-auto mb-12 max-m:mb-8">
                     <SectionTitle 
                         title="Vision Mission"
+                        titleWrapperStyles="animate-fade"
                         heading="Driving excellence and innovation in car rental services"
+                        headingStyles="vision-heading"
                         headingType="h2"
                     />
-                    <div className="flex justify-center mt-8 max-m:mt-4">
+                    <div className="animate-fade flex justify-center mt-8 max-m:mt-4">
                         <nav className="flex items-center justify-center flex-wrap gap-3 bg-secondary p-2 rounded-[100px] max-m:rounded-none">
                             {Object.values(data).map((tab, index) => (
                                 <TabButton
@@ -126,13 +128,15 @@ const VisionSec = () => {
                             <SectionTitle
                                 left={true}
                                 title={tab.title}
+                                titleWrapperStyles="animate-fade"
                                 heading={tab.heading}
                                 headingType="h2"
+                                headingStyles={`tab-heading${index}`}
                                 description={tab.description}
-                                descriptionStyles="text-paragraphcolor"
+                                descriptionStyles="animate-fade text-paragraphcolor"
                                 descriptionType='small-normal'
                             />
-                            <ul className="flex flex-col gap-5">
+                            <ul className="flex flex-col gap-5 animate-fade">
                                 {tab.list.map((item, idx) => (
                                     <li className="flex items-center gap-2" key={idx}>
                                         <div className="flex items-center justify-center w-6 h-6 bg-primary rounded-full">
@@ -148,6 +152,7 @@ const VisionSec = () => {
                     ))}
                     {Object.values(data).map((tab, index) => (
                         <TabImage
+                            className='animate-fade'
                             key={index}
                             src={tab.image}
                             alt={`${tab.title} img`}

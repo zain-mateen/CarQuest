@@ -5,7 +5,7 @@ import { TeamSocialLinks } from '../../Data'
 
 const DriverCart = ({ data }) => {
     return (
-        <div key={data.index} className='flex flex-col gap-5 group'>
+        <div key={data.index} className='animate-fade flex flex-col gap-5 group'>
             <div className="relative overflow-hidden rounded-[20px]">
                 <img className='w-full h-full object-cover duration-500 group-hover:scale-110' src={data.image} alt={`${data.heading} img`} />
                 <div className="absolute -bottom-10 left-1/2 translate-x-[-50%] opacity-0 invisible backdrop-blur-[30px] rounded-[30px] duration-500 group-hover:bottom-5 group-hover:opacity-100 group-hover:visible">

@@ -6,13 +6,13 @@ import { Calendar, Tag } from 'phosphor-react';
 const InnerHeader = ({ Heading, InnerPageLink, InnerPageLinkText, InnerPageSlash, CurrentPage, DateText, RoutePageLink, RoutePageText, PagesLinkList }) => {
     return (
         <>
-            <div className='bg-header-bg bg-center bg-cover bg-no-repeat py-[80px] mt-16 relative max-2xl:py-24 max-xl:py-20 max-m:py-12'>
+            <div className='inner-header bg-header-bg bg-center bg-cover bg-no-repeat py-[80px] mt-16 relative max-2xl:py-24 max-xl:py-20 max-m:py-12'>
                 <span className='absolute top-0 left-0 w-full h-full bg-black opacity-40' />
                 <div className="container">
-                    <div className="flex items-center flex-col text-center relative z-10 max-w-[1200px] mx-auto px-4">
+                    <div className=" flex items-center flex-col text-center relative z-10 max-w-[1200px] mx-auto px-4">
                         <TitleComponent 
                             type='h2' 
-                            className='text-white mb-6 max-xl:mb-4 max-m:mb-2 max-m:text-3xl'
+                            className='inner-header-heading text-white mb-6 max-xl:mb-4 max-m:mb-2 max-m:text-3xl'
                         >
                             {Heading}
                         </TitleComponent>
@@ -51,7 +51,7 @@ const InnerHeader = ({ Heading, InnerPageLink, InnerPageLinkText, InnerPageSlash
                     </div>
                 </div>
             </div>
-            <div className='py-3 border-b-[1px] border-b-borderPrimary'>
+            <div className='bread-crumbs py-3 border-b-[1px] border-b-borderPrimary'>
                 <div className='container'>
                     <ul className={`flex items-center flex-wrap ${PagesLinkList}`}>
                         <li className='px-2'>

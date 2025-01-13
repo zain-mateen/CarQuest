@@ -15,7 +15,7 @@ const AboutPage = () => {
                 Heading='About Us'
                 CurrentPage='About Us'
             />
-            <AboutSection />
+            <AboutSection aboutHeadingClass="about-page-heading" aboutSecStyles="about-page-sec" />
             <PartnerSec />
             <VisionSec />
             <VideoSec2 />
