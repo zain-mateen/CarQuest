@@ -150,15 +150,16 @@ const VisionSec = () => {
                             </ul>
                         </TabContent>
                     ))}
-                    {Object.values(data).map((tab, index) => (
-                        <TabImage
-                            className='animate-fade'
-                            key={index}
-                            src={tab.image}
-                            alt={`${tab.title} img`}
-                            isActive={activeTab === index + 1}
-                        />
-                    ))}
+                    <div className='animate-fade'>
+                        {Object.values(data).map((tab, index) => (
+                            <TabImage
+                                key={index}
+                                src={tab.image}
+                                alt={`${tab.title} img`}
+                                isActive={activeTab === index + 1}
+                            />
+                        ))}
+                    </div>
                 </TabContentWrapper>
             </div>
         </div>
