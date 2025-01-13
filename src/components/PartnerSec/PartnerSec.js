@@ -20,7 +20,7 @@ const PartnerSec = () => {
                             key={index}
                             className='animate-fade flex items-center justify-center h-[100px] w-full p-4 bg-black rounded-3xl shadow-md max-m:rounded-xl max-m:h-auto'
                         >
-                            <img className='h-10 w-auto object-contain' src={icons.icon} alt="Partner Icon" />
+                            <img className='h-10 w-auto object-contain max-m:h-8' src={icons.icon} alt="Partner Icon" />
                         </div>
                     ))}
                 </div>

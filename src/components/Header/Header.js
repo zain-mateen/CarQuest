@@ -84,7 +84,7 @@ const Header = () => {
                                             {item.submenu.map((submenuItem, subIndex) => (
                                                 <li key={subIndex}>
                                                     <Link
-                                                        href={submenuItem.path}
+                                                        to={submenuItem.path}
                                                         className="inline-block text-sm font-semibold text-white w-full duration-300 hover:text-primary"
                                                     >
                                                         {submenuItem.label}
@@ -96,7 +96,7 @@ const Header = () => {
                                 </>
                             ) : (
                                 <Link
-                                    href={item.path}
+                                    to={item.path}
                                     className="inline-block text-sm font-semibold text-white w-full duration-300 hover:text-primary"
                                 >
                                     {item.label}
