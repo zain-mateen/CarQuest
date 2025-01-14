@@ -38,21 +38,13 @@ const TabContent = styled.div`
 
 const TabImage = styled.img`
     position: ${({ isActive }) => (isActive ? 'relative' : 'absolute')};
-    width: 45%;
+    width: 100%;
     border-radius: 30px;
     opacity: ${({ isActive }) => (isActive ? 1 : 0)};
     transform: ${({ isActive }) => (isActive ? 'translateX(0)' : 'translateX(50%)')};
     transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out;
     pointer-events: ${({ isActive }) => (isActive ? 'auto' : 'none')};
     visibility: ${({ isActive }) => (isActive ? 'visible' : 'hidden')};
-
-    @media (max-width: 992px) {
-        width: 60%;
-    }
-    
-    @media (max-width: 576px) {
-        width: 100%;
-    }
 `;
 
 const data = {
@@ -150,7 +142,7 @@ const VisionSec = () => {
                             </ul>
                         </TabContent>
                     ))}
-                    <div className='animate-fade'>
+                    <div className='animate-fade w-[45%] max-xl:w-[60%] max-m:w-[100%]'>
                         {Object.values(data).map((tab, index) => (
                             <TabImage
                                 key={index}
