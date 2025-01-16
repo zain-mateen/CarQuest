@@ -12,7 +12,7 @@ const Service = () => {
                 Heading='Service'
                 CurrentPage='Service'
             />
-            <div className="animate-fade py-28 max-xl:py-20 max-m:py-12">
+            <div className="about-page-sec py-28 max-xl:py-20 max-m:py-12">
                 <div className="container">
                     <div className="grid grid-cols-4 gap-6 max-xl:grid-cols-2 max-l:grid-cols-1">
                         {ServiceData.map((data, index) => (
