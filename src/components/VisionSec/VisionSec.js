@@ -6,9 +6,9 @@ import { Check } from 'phosphor-react';
 import TitleComponent from '../TitleComponent/TitleComponent';
 
 const TabButton = styled.button`
-    ${tw`border-none py-1 sm:py-2 px-3 sm:px-5 cursor-pointer rounded-full duration-300`}
+    ${tw`text-base border-none py-1 sm:py-2 px-3 sm:px-5 cursor-pointer rounded-full duration-300 max-m:text-sm max-m:rounded`}
     background: ${({ isActive }) => (isActive ? 'rgb(255, 54, 0)' : '#000000')};
-    color: ${({ isActive }) => (isActive ? '#FFF' : '#FFF')};
+    color: #FFF;
 
     &:hover {
         ${tw`bg-primary text-white`}
@@ -16,7 +16,12 @@ const TabButton = styled.button`
     &:focus {
         ${tw`border-none outline-none`}
     }
+
+    @media (max-width: 576px) {
+        background: ${({ isActive }) => (isActive ? 'rgb(255, 54, 0)' : '#333333')};
+    }
 `;
+
 
 const TabContentWrapper = styled.div`
     ${tw`flex justify-between items-center overflow-hidden w-full h-auto relative max-xl:flex-col max-xl:gap-y-8`}
