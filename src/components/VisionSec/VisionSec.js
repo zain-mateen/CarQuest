@@ -6,7 +6,7 @@ import { Check } from 'phosphor-react';
 import TitleComponent from '../TitleComponent/TitleComponent';
 
 const TabButton = styled.button`
-    ${tw`border-none py-2 px-5 cursor-pointer rounded-full duration-300`}
+    ${tw`border-none py-1 sm:py-2 px-3 sm:px-5 cursor-pointer rounded-full duration-300`}
     background: ${({ isActive }) => (isActive ? 'rgb(255, 54, 0)' : '#000000')};
     color: ${({ isActive }) => (isActive ? '#FFF' : '#FFF')};
 
@@ -33,6 +33,7 @@ const TabContent = styled.div`
     visibility: ${({ isActive }) => (isActive ? 'visible' : 'hidden')};
     @media (max-width: 992px) {
         width: 100%;
+        padding-right: 0px;
     }
 `;
 
@@ -101,7 +102,7 @@ const VisionSec = () => {
                         headingType="h2"
                     />
                     <div className="animate-fade flex justify-center mt-8 max-m:mt-4">
-                        <nav className="flex items-center justify-center flex-wrap gap-3 bg-secondary p-2 rounded-[100px] max-m:rounded-none">
+                        <nav className="flex items-center justify-center flex-wrap gap-3 max-m:bg-transparent bg-secondary p-2 rounded-[100px] max-m:rounded-none">
                             {Object.values(data).map((tab, index) => (
                                 <TabButton
                                     key={index}

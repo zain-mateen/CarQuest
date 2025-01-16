@@ -8,7 +8,7 @@ const AboutSecCart = ({ icon: Icon, title, description, flexStyles, afterStyles,
             className={`flex gap-7 group ${flexStyles} [&:not(:last-child)]:border-b [&:not(:last-child)]:border-borderPrimary [&:not(:last-child)]:pb-5 max-m:gap-5`}
         >
             <div 
-                className={`after:content-[""] after:absolute after:top-[-10px] after:left-[-10px] after:bg-primary after:rounded-full after:z-[-1] after:opacity-10 after:duration-300 relative group-hover:after:opacity-70 ${afterStyles}`}
+                className={`after:content-[""] after:absolute after:top-[-10px] after:-left-[5px] md:after:left-[-10px] after:bg-primary after:rounded-full after:z-[-1] after:opacity-10 after:duration-300 relative group-hover:after:opacity-70 ${afterStyles}`}
             >
                 <Icon svgStyles={svgStyles} />
             </div>
