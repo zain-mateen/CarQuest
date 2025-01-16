@@ -143,6 +143,7 @@ const Animation = ({ children }) => {
         animateText(".inner-header-heading", 1.5);
         slideUpAnimation(".bread-crumbs", 1.8);
         slideUpAnimation(".about-page-sec", 2.1);
+        slideUpAnimation(".service-page-sec", 2.1);
         scaleAnimation(".hero-sec", 0.5);
         slideUpAnimation(".hero1-title", 1.5);
         animateText(".hero1-heading", 1.7);

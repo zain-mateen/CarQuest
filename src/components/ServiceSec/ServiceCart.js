@@ -15,7 +15,7 @@ const ServiceCart = ({ data }) => {
                 <div className="relative mb-10 transition-all duration-300 max-2xl:mb-8">
                     <IconComponent svgStyles={data.svgStyles} />
                     <div 
-                        className="absolute top-[-10px] left-[-10px] bg-primary opacity-10 rounded-full w-14 h-14 transition-all duration-300 ease-in-out sm:group-hover:bg-black sm:group-hover:opacity-[100%]" 
+                        className="absolute top-[-10px] left-[-10px] bg-white/[10%] rounded-full w-14 h-14 transition-all duration-300 ease-in-out sm:group-hover:bg-black sm:group-hover:opacity-[100%]" 
                     />
                 </div>
                 <div className="content">
