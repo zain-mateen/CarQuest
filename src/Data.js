@@ -25,7 +25,7 @@ export const menuData = [
     },
     {
         label: 'Service',
-        path: '/',
+        path: '/service',
     },
     {
         label: 'Cars',

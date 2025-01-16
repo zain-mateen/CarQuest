@@ -10,6 +10,7 @@ import ProgressBar from './components/ProgressBar/ProgressBar';
 
 import './App.css';
 import AboutPage from './pages/AboutPage';
+import Service from './pages/Service';
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -35,6 +36,7 @@ function App() {
           <Routes>
             <Route index element={<Home />} />
             <Route path='/about' element={<AboutPage />} />
+            <Route path='/service' element={<Service />} />
           </Routes>
           <Footer />
         </Animation>
