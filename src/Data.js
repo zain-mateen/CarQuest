@@ -710,3 +710,37 @@ export const partnerSecData = [
     { icon: ParterIcon1, },
     { icon: ParterIcon2, },
 ];
+export const ServiceDetailData = [
+    {
+        id: 'car-rental-with-driver',
+        heading: 'Car Rental With Driver',
+    },
+    {
+        id: 'business-car-rental',
+        heading: 'Business Car Rental',
+    },
+    {
+        id: 'airport-transfer',
+        heading: 'Airport Transfer',
+    },
+    {
+        id: 'chauffeur-services',
+        heading: 'Chauffeur Services',
+    },
+    {
+        id: 'private-transfer',
+        heading: 'Private Transfer',
+    },
+    {
+        id: 'vip-transfer',
+        heading: 'VIP Transfer',
+    },
+    {
+        id: 'roadside-assistance',
+        heading: 'Roadside Assistance',
+    },
+    {
+        id: 'event-transportation',
+        heading: 'Event Transportation',
+    },
+];

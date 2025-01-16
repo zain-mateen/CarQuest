@@ -29,10 +29,8 @@ const Accordion = ({ item, variant = 'default' }) => {
         secondary: {
             accordionStyles: 'border border-solid border-white/[20%] rounded-xl overflow-hidden',
             activeAccordionStyles: 'bg-primary',
-            activeTitleStyles: 'text-white',
-            activeIconStyles: 'text-white',
             buttonStyles: 'py-3 px-5',
-            titleStyles: 'text-left',
+            titleStyles: 'text-left text-white',
             iconStyles: 'text-2xl font-medium text-white',
             activeContentBodyStyles: 'px-5 py-3 border-t border-solid border-white/[20%]',
             contentStyles: 'text-white',
