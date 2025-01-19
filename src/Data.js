@@ -31,8 +31,8 @@ export const menuData = [
         label: 'Cars',
         icon: <CaretDown size={12} weight="bold" />,
         submenu: [
-            { label: 'Car Lists', path: '/' },
-            { label: 'Car Type', path: '/' },
+            { label: 'Car Lists', path: '/cars' },
+            { label: 'Car Type', path: '/car-type' },
         ],
     },
     {
@@ -50,7 +50,7 @@ export const menuData = [
     },
     {
         label: 'Contact Us',
-        path: '/',
+        path: '/contact',
     },
 ];
 export const HeroFormData = [
@@ -275,6 +275,84 @@ export const CarData = [
         price: '128',
     },
 ];
+export const CarSingleData = [
+    {
+        id: "voyager-hybrid",
+        heading: "Voyager Hybrid",
+    },
+    {
+        id: "saphire-convertible",
+        heading: "Saphire Convertible",
+    },
+    {
+        id: "harrier-wagon",
+        heading: "Harrier Wagon",
+    },
+    {
+        id: "eclipse-sedan",
+        heading: "Eclipse Sedan",
+    },
+    {
+        id: "breeze-compact",
+        heading: "Breeze Compact",
+    },
+    {
+        id: "voyager-gt",
+        heading: "Voyager GT",
+    },
+    {
+        id: "viper-sxt",
+        heading: "Viper SXT",
+    },
+    {
+        id: "skyline-elite",
+        heading: "Skyline ELite",
+    },
+    {
+        id: "novaglide",
+        heading: "NovaGLide",
+    },
+    {
+        id: "meteor-gt",
+        heading: "Meteor GT",
+    },
+    {
+        id: "galiator-lx",
+        heading: "Galiator LX",
+    },
+    {
+        id: "cobra-classic",
+        heading: "Cobra Classic",
+    },
+    {
+        id: "aurora-lx",
+        heading: "Aurora LX",
+    },
+    {
+        id: "turbomax-speedster",
+        heading: "TurboMax Speedster",
+    },
+    {
+        id: "pioneer-compact",
+        heading: "Pioneer Compact",
+    },
+    {
+        id: "phantom-drive",
+        heading: "Phantom Drive",
+    },
+    {
+        id: "falcon-x-cruiser",
+        heading: "Falcon X Cruiser",
+    },
+    {
+        id: "desert-storm",
+        heading: "Desert Storm",
+    },
+    {
+        id: "eclipse-sport-3000",
+        heading: "Eclipse Sport 3000",
+    },
+]
 export const CompanyLogos = [
     { logoImage: companyLogo1, logoText: 'Mercedes-Benz', },
     { logoImage: companyLogo2, logoText: 'Audi', },

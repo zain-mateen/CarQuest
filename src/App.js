@@ -12,6 +12,10 @@ import './App.css';
 import AboutPage from './pages/AboutPage';
 import Service from './pages/Service';
 import ServiceDetail from './pages/ServiceDetail';
+import ContactPage from './pages/ContactPage';
+import CarType from './pages/CarType';
+import Cars from './pages/Cars';
+import CarSingle from './pages/CarSingle';
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -39,6 +43,10 @@ function App() {
             <Route path='/about' element={<AboutPage />} />
             <Route path='/service' element={<Service />} />
             <Route path='/service/:id' element={<ServiceDetail />} />
+            <Route path='/cars' element={<Cars />} />
+            <Route path='/cars/:id' element={<CarSingle />} />
+            <Route path='/car-type' element={<CarType />} />
+            <Route path='/contact' element={<ContactPage />} />
           </Routes>
           <Footer />
         </Animation>

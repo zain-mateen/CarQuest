@@ -8,6 +8,7 @@ import doorIcon from '../../images/icon-door.svg';
 import passengerIcon from '../../images/icon-passengers.svg';
 
 const CarCart = ({ data }) => {
+
     const specifications = [
         { label: 'Doors', icon: doorIcon, value: data.DoorText },
         { label: 'Passengers', icon: passengerIcon, value: data.PassengerText },

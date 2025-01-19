@@ -1,42 +1,47 @@
-import React, { useState, useRef } from 'react';
-import PropTypes from 'prop-types';
+import React, { useState, useRef, useEffect } from 'react';
 import TitleComponent from '../TitleComponent/TitleComponent';
 
 const Accordion = ({ item, variant = 'default' }) => {
     const [openIndex, setOpenIndex] = useState(null);
     const contentRefs = useRef([]);
+    const [contentHeights, setContentHeights] = useState([]);
 
     const toggleCollapse = (index) => {
         setOpenIndex(openIndex === index ? null : index);
     };
 
+    useEffect(() => {
+        const heights = contentRefs.current.map(ref => ref?.scrollHeight || 0);
+            setContentHeights(heights);
+    }, []);
+
     const getVariantStyles = (styleKey, isActive = false) => {
         const variantStyles = {
-        default: {
-            accordionStyles: '[&:not(:last-child)]:border-b [&:not(:last-child)]:border-solid [&:not(:last-child)]:border-white/[20%] pb-5',
-            titleStyles: 'text-white text-left',
-            iconStyles: 'text-2xl font-medium text-white',
-            bodyStyles: 'pt-[5px] px-[36px]',
-            contentBodyStyles: 'pt-3 pl-8',
-            contentStyles: 'text-paragraphcolor',
-        },
-        primary: {
-            accordionStyles: '[&:not(:last-child)]:border-b [&:not(:last-child)]:border-solid [&:not(:last-child)]:border-white/[20%] pb-5',
-            titleStyles: 'text-white text-left',
-            iconStyles: 'text-2xl font-medium text-white',
-            contentStyles: 'text-paragraphcolor',
-        },
-        secondary: {
-            accordionStyles: 'border border-solid border-white/[20%] rounded-xl overflow-hidden',
-            activeAccordionStyles: 'bg-primary',
-            buttonStyles: 'py-3 px-5',
-            titleStyles: 'text-left text-white',
-            iconStyles: 'text-2xl font-medium text-white',
-            activeContentBodyStyles: 'px-5 py-3 border-t border-solid border-white/[20%]',
-            contentStyles: 'text-white',
-        }
-    };
-
+            default: {
+                accordionStyles: '[&:not(:last-child)]:border-b [&:not(:last-child)]:border-solid [&:not(:last-child)]:border-white/[20%] pb-5',
+                titleStyles: 'text-white text-left',
+                iconStyles: 'text-2xl font-medium text-white',
+                bodyStyles: 'pt-[5px] px-[36px]',
+                contentBodyStyles: 'pt-3 pl-8',
+                contentStyles: 'text-paragraphcolor',
+            },
+            primary: {
+                accordionStyles: '[&:not(:last-child)]:border-b [&:not(:last-child)]:border-solid [&:not(:last-child)]:border-white/[20%] pb-5',
+                titleStyles: 'text-white text-left',
+                iconStyles: 'text-2xl font-medium text-white',
+                contentStyles: 'text-paragraphcolor',
+            },
+            secondary: {
+                accordionStyles: 'border border-solid border-white/[20%] rounded-xl overflow-hidden',
+                activeAccordionStyles: 'pb-3 bg-primary',
+                buttonStyles: 'py-3 px-5',
+                activeButtonStyles: 'mb-3 border-b border-white/[20%]',
+                titleStyles: 'text-left text-white',
+                iconStyles: 'text-2xl font-medium text-white',
+                activeContentBodyStyles: 'px-5',
+                contentStyles: 'text-white',
+            }
+        };
         const styles = variantStyles[variant] || variantStyles.default;
         return styles[styleKey] + (isActive ? ` ${styles[`active${styleKey.charAt(0).toUpperCase() + styleKey.slice(1)}`]}` : '');
     };
@@ -69,8 +74,8 @@ const Accordion = ({ item, variant = 'default' }) => {
                     <div
                         ref={(el) => (contentRefs.current[index] = el)}
                         className="overflow-hidden transition-all duration-300 ease-in-out"
-                        style={{
-                            maxHeight: openIndex === index ? `${contentRefs.current[index]?.scrollHeight}px` : '0',
+                        style={{ 
+                            height: openIndex === index ? `${contentHeights[index]}px` : "0px",
                         }}
                     >
                         <div className={`${getVariantStyles('contentBodyStyles', openIndex === index)}`}>
@@ -83,17 +88,6 @@ const Accordion = ({ item, variant = 'default' }) => {
             ))}
         </div>
     );
-};
-
-Accordion.propTypes = {
-    item: PropTypes.arrayOf(
-        PropTypes.shape({
-        number: PropTypes.string,
-        title: PropTypes.string.isRequired,
-        content: PropTypes.string.isRequired,
-        })
-    ).isRequired,
-    variant: PropTypes.oneOf(['default', 'primary', 'secondary']),
 };
 
 export default Accordion;
