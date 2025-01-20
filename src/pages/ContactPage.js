@@ -24,7 +24,7 @@ const ContactPage = () => {
                 Heading='Contact Us'
                 CurrentPage='Contact Us'
             />
-            <div className='pt-28 max-xl:pt-20 max-m:pt-12'>
+            <div className='contact-page-sec pt-28 max-xl:pt-20 max-m:pt-12'>
                 <div className="container">
                     <div className='grid grid-cols-2 gap-6 p-12 border border-solid border-white/[20%] rounded-3xl relative max-xl:grid-cols-1 max-xl:gap-x-0 max-l:border-none max-l:p-0'>
                         <div className="p-10 bg-secondary rounded-2xl overflow-hidden relative max-l:p-5">
@@ -136,7 +136,7 @@ const ContactPage = () => {
                     </div>
                 </div>
             </div>
-            <div className="py-28 max-xl:py-20 max-m:py-12">
+            <div className="pt-28 max-xl:pt-20 max-m:pt-12">
                 <SectionTitle 
                     wrapperStyles='max-w-[600px] mx-auto mb-12 max-m:mb-8'
                     title='Location'

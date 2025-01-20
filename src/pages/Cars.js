@@ -32,11 +32,11 @@ const Cars = () => {
     return (
         <>
             <InnerHeader Heading="Cars" CurrentPage="Cars" />
-            <div className="py-28 max-xl:py-20 max-m:py-12">
+            <div className="car-page-sec py-28 max-xl:py-20 max-m:py-12">
                 <div className="container">
                     <div className="grid grid-cols-4 gap-8 max-xl:grid-cols-1 max-xl:gap-x-0">
                         <div className="relative">
-                            <div className="sticky top-6 left-0 p-6 rounded-3xl bg-secondary">
+                            <div className="sticky top-20 left-0 p-6 rounded-3xl bg-secondary">
                                 <div className="mb-6 border-b border-solid border-borderPrimary">
                                     <input
                                         type="text"

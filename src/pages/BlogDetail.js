@@ -39,7 +39,7 @@ const BlogDetail = () => {
                 InnerPageSlash='/'
                 CurrentPage={BlogDetail.heading}
             />
-            <div className='py-28 max-xl:py-20 max-m:py-12'>
+            <div className='blog-details-page py-28 max-xl:py-20 max-m:py-12'>
                 <div className="container">
                     <img 
                         className='rounded-[46px] w-full h-[600px] object-cover object-center max-xl:h-auto max-xl:rounded-3xl' 

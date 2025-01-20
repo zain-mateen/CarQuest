@@ -86,7 +86,7 @@ const CarSingle = () => {
                 InnerPageSlash= '/'
                 CurrentPage={carDetail.heading}
             />
-            <div className='py-28 max-xl:py-20 max-m:py-12'>
+            <div className='single-car-page py-28 max-xl:py-20 max-m:py-12'>
                 <div className="container">
                     <div className="grid grid-cols-3 gap-8 max-3xl:gap-10 max-2xl:gap-6 max-xl:grid-cols-1 max-xl:gap-x-0">
                         <div className="relative">

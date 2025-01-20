@@ -7,8 +7,6 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Home from './pages/Home';
 import ProgressBar from './components/ProgressBar/ProgressBar';
-
-import './App.css';
 import AboutPage from './pages/AboutPage';
 import Service from './pages/Service';
 import ServiceDetail from './pages/ServiceDetail';
@@ -18,6 +16,8 @@ import Cars from './pages/Cars';
 import CarSingle from './pages/CarSingle';
 import Blog from './pages/Blog';
 import BlogDetail from './pages/BlogDetail';
+
+import './App.css';
 
 function App() {
   const [loading, setLoading] = useState(false);
