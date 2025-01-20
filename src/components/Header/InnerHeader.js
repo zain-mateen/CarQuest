@@ -16,7 +16,7 @@ const InnerHeader = ({ Heading, InnerPageLink, InnerPageLinkText, InnerPageSlash
                         >
                             {Heading}
                         </TitleComponent>
-                        <ul className='flex items-center gap-x-8 gap-y-4 justify-center flex-wrap'>
+                        <ul className='flex items-center gap-x-8 gap-y-4 justify-center flex-wrap max-m:gap-3'>
                             {DateText && 
                                 <li className='flex items-center gap-2'>
                                     <Calendar 
@@ -53,7 +53,7 @@ const InnerHeader = ({ Heading, InnerPageLink, InnerPageLinkText, InnerPageSlash
             </div>
             <div className='bread-crumbs py-3 border-b-[1px] border-b-borderPrimary'>
                 <div className='container'>
-                    <ul className={`flex items-center flex-wrap ${PagesLinkList}`}>
+                    <ul className={`flex items-center gap- flex-wrap ${PagesLinkList}`}>
                         <li className='px-2'>
                             <Link 
                                 to='/' 

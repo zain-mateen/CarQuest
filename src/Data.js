@@ -39,7 +39,7 @@ export const menuData = [
         label: 'Pages',
         icon: <CaretDown size={12} weight="bold" />,
         submenu: [
-            { label: 'Blog', path: '/' },
+            { label: 'Blog', path: '/blog' },
             { label: 'Pricing', path: '/' },
             { label: 'Image Gallery', path: '/' },
             { label: 'Video Gallery', path: '/' },
@@ -81,6 +81,40 @@ export const HeroFormData = [
         id: 'date',
         placeholder: 'Enter Date',
         additionalClasses: 'w-full border-x border-gray-300 px-5 max-xl:p-0 max-xl:border-none',
+    },
+];
+export const blogDetailFormData = [
+    {
+        id: "comment",
+        label: "Comment *",
+        type: "textarea",
+        placeholder: "Enter your comment",
+        className: "text-base font-medium text-white py-3 px-5 bg-secondary rounded-lg border-none outline-none resize-none h-60",
+        wrapperClass: "flex flex-col gap-1 col-span-3",
+    },
+    {
+        id: "name",
+        label: "Name *",
+        type: "text",
+        placeholder: "Enter your name",
+        className: "text-base font-medium text-white py-3 px-5 bg-secondary rounded-lg border-none outline-none w-full",
+        wrapperClass: "flex flex-col gap-1",
+    },
+    {
+        id: "email",
+        label: "Email *",
+        type: "email",
+        placeholder: "Enter your email",
+        className: "text-base font-medium text-white py-3 px-5 bg-secondary rounded-lg border-none outline-none w-full",
+        wrapperClass: "flex flex-col gap-1",
+    },
+    {
+        id: "website",
+        label: "Website *",
+        type: "text",
+        placeholder: "Enter your website",
+        className: "text-base font-medium text-white py-3 px-5 bg-secondary rounded-lg border-none outline-none w-full",
+        wrapperClass: "flex flex-col gap-1",
     },
 ];
 export const features = [
@@ -614,6 +648,40 @@ export const ServiceData = [
         description: 'Enhance your rental experience with additional options.',
     },
 ];
+export const ServiceDetailData = [
+    {
+        id: 'car-rental-with-driver',
+        heading: 'Car Rental With Driver',
+    },
+    {
+        id: 'business-car-rental',
+        heading: 'Business Car Rental',
+    },
+    {
+        id: 'airport-transfer',
+        heading: 'Airport Transfer',
+    },
+    {
+        id: 'chauffeur-services',
+        heading: 'Chauffeur Services',
+    },
+    {
+        id: 'private-transfer',
+        heading: 'Private Transfer',
+    },
+    {
+        id: 'vip-transfer',
+        heading: 'VIP Transfer',
+    },
+    {
+        id: 'roadside-assistance',
+        heading: 'Roadside Assistance',
+    },
+    {
+        id: 'event-transportation',
+        heading: 'Event Transportation',
+    },
+];
 export const FaqData = {
     WorkSecDropdownData: [
         {
@@ -768,6 +836,82 @@ export const BlogPostData = [
         title: 'Why you should consider renting a luxury car for your next trip'
     }
 ];
+export const BlogData = [
+    {
+        id: 'top-tips-for-booking-your-car-rental-what-you-need-to-know',
+        image: require('./images/post-1.webp'),
+        dateText: ' August 5, 2024',
+        heading: 'Top tips for booking your car rental: what you need to know',
+    },
+    {
+        id: 'exploring-your-rental-car-options-sedan-suv-or-convertible?',
+        image: require('./images/post-2.webp'),
+        dateText: ' August 5, 2024',
+        heading: 'Exploring your rental car options: sedan, suv, or convertible?',
+    },
+    {
+        id: 'the-pros-and-cons-of-renting-a-car-vs-using-rideshare-services',
+        image: require('./images/post-3.webp'),
+        dateText: ' August 5, 2024',
+        heading: 'The pros and cons of renting a car vs. using rideshare services',
+    },
+    {
+        id: 'why-you-should-consider-renting-a-luxury-car-for-your-next-trip',
+        image: require('./images/post-4.webp'),
+        dateText: ' August 5, 2024',
+        heading: 'Why you should consider renting a luxury car for your next trip',
+    },
+    {
+        id: 'what-to-expect-when-renting-a-car-for-the-first-time',
+        image: require('./images/post-5.webp'),
+        dateText: ' August 5, 2024',
+        heading: 'What to expect when renting a car for the first time',
+    },
+    {
+        id: 'the-best-apps-for-managing-your-car-rental-experience',
+        image: require('./images/post-6.webp'),
+        dateText: ' August 5, 2024',
+        heading: 'The best apps for managing your car rental experience',
+    },
+];
+export const BlogDetailData = [
+    {
+        id: 'top-tips-for-booking-your-car-rental-what-you-need-to-know',
+        image: require('./images/post-1.webp'),
+        dateText: ' August 5, 2024',
+        heading: 'Top tips for booking your car rental: what you need to know',
+    },
+    {
+        id: 'exploring-your-rental-car-options-sedan-suv-or-convertible?',
+        image: require('./images/post-2.webp'),
+        dateText: ' August 5, 2024',
+        heading: 'Exploring your rental car options: sedan, suv, or convertible?',
+    },
+    {
+        id: 'the-pros-and-cons-of-renting-a-car-vs-using-rideshare-services',
+        image: require('./images/post-3.webp'),
+        dateText: ' August 5, 2024',
+        heading: 'The pros and cons of renting a car vs. using rideshare services',
+    },
+    {
+        id: 'why-you-should-consider-renting-a-luxury-car-for-your-next-trip',
+        image: require('./images/post-4.webp'),
+        dateText: ' August 5, 2024',
+        heading: 'Why you should consider renting a luxury car for your next trip',
+    },
+    {
+        id: 'what-to-expect-when-renting-a-car-for-the-first-time',
+        image: require('./images/post-5.webp'),
+        dateText: ' August 5, 2024',
+        heading: 'What to expect when renting a car for the first time',
+    },
+    {
+        id: 'the-best-apps-for-managing-your-car-rental-experience',
+        image: require('./images/post-6.webp'),
+        dateText: ' August 5, 2024',
+        heading: 'The best apps for managing your car rental experience',
+    },
+]
 export const DriversData = [
     { image: require('./images/team-1.webp'), heading: 'John Smith', text: 'Senior Chauffeur', },
     { image: require('./images/team-2.webp'), heading: 'Taylor Smith', text: 'City Tour Guide', },
@@ -787,38 +931,4 @@ export const partnerSecData = [
     { icon: ParterIcon4, },
     { icon: ParterIcon1, },
     { icon: ParterIcon2, },
-];
-export const ServiceDetailData = [
-    {
-        id: 'car-rental-with-driver',
-        heading: 'Car Rental With Driver',
-    },
-    {
-        id: 'business-car-rental',
-        heading: 'Business Car Rental',
-    },
-    {
-        id: 'airport-transfer',
-        heading: 'Airport Transfer',
-    },
-    {
-        id: 'chauffeur-services',
-        heading: 'Chauffeur Services',
-    },
-    {
-        id: 'private-transfer',
-        heading: 'Private Transfer',
-    },
-    {
-        id: 'vip-transfer',
-        heading: 'VIP Transfer',
-    },
-    {
-        id: 'roadside-assistance',
-        heading: 'Roadside Assistance',
-    },
-    {
-        id: 'event-transportation',
-        heading: 'Event Transportation',
-    },
 ];

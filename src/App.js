@@ -16,6 +16,8 @@ import ContactPage from './pages/ContactPage';
 import CarType from './pages/CarType';
 import Cars from './pages/Cars';
 import CarSingle from './pages/CarSingle';
+import Blog from './pages/Blog';
+import BlogDetail from './pages/BlogDetail';
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -46,6 +48,8 @@ function App() {
             <Route path='/cars' element={<Cars />} />
             <Route path='/cars/:id' element={<CarSingle />} />
             <Route path='/car-type' element={<CarType />} />
+            <Route path='/blog' element={<Blog />} />
+            <Route path='/blog/:id' element={<BlogDetail />} />
             <Route path='/contact' element={<ContactPage />} />
           </Routes>
           <Footer />
