@@ -40,9 +40,9 @@ export const menuData = [
         icon: <CaretDown size={12} weight="bold" />,
         submenu: [
             { label: 'Blog', path: '/blog' },
-            { label: 'Pricing', path: '/' },
-            { label: 'Image Gallery', path: '/' },
-            { label: 'Video Gallery', path: '/' },
+            { label: 'Pricing', path: '/pricing' },
+            { label: 'Image Gallery', path: '/image-gallery' },
+            { label: 'Video Gallery', path: '/video-gallery' },
             { label: 'Testimonials', path: '/' },
             { label: 'Faqs', path: '/' },
             { label: 'Drivers', path: '/', },
@@ -844,7 +844,7 @@ export const BlogData = [
         heading: 'Top tips for booking your car rental: what you need to know',
     },
     {
-        id: 'exploring-your-rental-car-options-sedan-suv-or-convertible?',
+        id: 'exploring-your-rental-car-options-sedan-suv-or-convertible',
         image: require('./images/post-2.webp'),
         dateText: ' August 5, 2024',
         heading: 'Exploring your rental car options: sedan, suv, or convertible?',
@@ -882,7 +882,7 @@ export const BlogDetailData = [
         heading: 'Top tips for booking your car rental: what you need to know',
     },
     {
-        id: 'exploring-your-rental-car-options-sedan-suv-or-convertible?',
+        id: 'exploring-your-rental-car-options-sedan-suv-or-convertible',
         image: require('./images/post-2.webp'),
         dateText: ' August 5, 2024',
         heading: 'Exploring your rental car options: sedan, suv, or convertible?',
@@ -931,4 +931,51 @@ export const partnerSecData = [
     { icon: ParterIcon4, },
     { icon: ParterIcon1, },
     { icon: ParterIcon2, },
+];
+export const PricingData = [
+    {
+        carImage: require('./images/Viper-SXT.webp'),
+        heading: 'Luxury Car',
+        description: 'Specifies the type or model of the car available for rent.',
+        price: '29',
+    },
+    {
+        pricingCartStyles: 'bg-primary border-none',
+        carImage: require('./images/Viper-SXT.webp'),
+        heading: 'Convertible Car',
+        headingStyles: 'text-white',
+        description: 'Specifies the type or model of the car available for rent.',
+        descriptionStyles: 'text-white',
+        price: '49',
+        priceStyles: 'text-white',
+        buttonVariant: 'tertiary',
+    },
+    {
+        carImage: require('./images/Viper-SXT.webp'),
+        heading: 'Sport Car',
+        description: 'Specifies the type or model of the car available for rent.',
+        price: '79',
+    },
+];
+export const ImageGalleryData = [
+    { Image: require('./images/gallery-1.webp'), },
+    { Image: require('./images/gallery-2.webp'), },
+    { Image: require('./images/gallery-3.webp'), },
+    { Image: require('./images/gallery-4.webp'), },
+    { Image: require('./images/gallery-5.webp'), },
+    { Image: require('./images/gallery-6.webp'), },
+    { Image: require('./images/gallery-7.webp'), },
+    { Image: require('./images/gallery-8.webp'), },
+    { Image: require('./images/gallery-9.webp'), },
+];
+export const VideoGalleryData = [
+    { Image: require('./images/video-gallery-img-1.webp') },
+    { Image: require('./images/video-gallery-img-2.webp') },
+    { Image: require('./images/video-gallery-img-3.webp') },
+    { Image: require('./images/video-gallery-img-4.webp') },
+    { Image: require('./images/video-gallery-img-5.webp') },
+    { Image: require('./images/video-gallery-img-6.webp') },
+    { Image: require('./images/video-gallery-img-7.webp') },
+    { Image: require('./images/video-gallery-img-8.webp') },
+    { Image: require('./images/video-gallery-img-9.webp') },
 ];

@@ -16,6 +16,9 @@ import Cars from './pages/Cars';
 import CarSingle from './pages/CarSingle';
 import Blog from './pages/Blog';
 import BlogDetail from './pages/BlogDetail';
+import PricingPage from './pages/PricingPage';
+import ImageGallery from './pages/ImageGallery';
+import VideoGallery from './pages/VideoGallery'
 
 import './App.css';
 
@@ -50,6 +53,9 @@ function App() {
             <Route path='/car-type' element={<CarType />} />
             <Route path='/blog' element={<Blog />} />
             <Route path='/blog/:id' element={<BlogDetail />} />
+            <Route path='/pricing' element={<PricingPage />} />
+            <Route path='/image-gallery' element={<ImageGallery />} />
+            <Route path='/video-gallery' element={<VideoGallery />} />
             <Route path='/contact' element={<ContactPage />} />
           </Routes>
           <Footer />

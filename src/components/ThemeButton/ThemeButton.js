@@ -18,8 +18,8 @@ const BaseButton = styled.button`
           return 'white';
         case 'secondary':
           return 'rgb(255, 54, 0)';
-        case 'outline':
-          return 'rgb(219, 234, 254)';
+        case 'tertiary':
+          return 'rgb(4, 4, 1)';
         case 'text':
           return 'transparent';
         default:
@@ -45,8 +45,8 @@ const BaseButton = styled.button`
         return tw`bg-primary text-white font-bold hover:text-black`;
       case 'secondary':
         return tw`bg-white text-black font-bold hover:text-white`;
-      case 'outline':
-        return tw`border-2 border-blue-600 text-blue-600 font-bold bg-transparent hover:bg-blue-50`;
+      case 'tertiary':
+        return tw`bg-white text-black font-bold hover:text-white`;
       case 'text':
         return tw`bg-transparent text-blue-600 font-bold hover:underline p-0`;
       default:

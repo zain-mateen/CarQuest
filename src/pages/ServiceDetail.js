@@ -61,7 +61,7 @@ const ServiceDetail = () => {
             <div className='py-28 max-xl:py-20 max-m:py-12'>
                 <div className="container">
                     <div className="grid grid-cols-3 gap-8 max-xl:grid-cols-1 max-xl:gap-x-0">
-                        <div className='relative'>
+                        <div className='service-page-sec relative'>
                             <div className='flex flex-col gap-10 sticky top-6 left-0'>
                                 <div className="p-6 rounded-3xl bg-secondary shadow-md">
                                     <TitleComponent size='extra-large-semibold' className='text-white mb-6'>
@@ -101,18 +101,18 @@ const ServiceDetail = () => {
                             <ImageComponent 
                                 src={ServiceImage}
                                 alt='service img'
-                                ImageWrapper='rounded-[46px] max-xl:rounded-3xl max-m:rounded-xl'
+                                ImageWrapper='service-page-sec rounded-[46px] max-xl:rounded-3xl max-m:rounded-xl'
                             />
-                            <TitleComponent type='h2' className='text-white'>
+                            <TitleComponent type='h2' className='services-heading text-white'>
                                 Discover premium rental services
                             </TitleComponent>
-                            <TitleComponent size='small-normal' className='text-paragraphcolor'>
+                            <TitleComponent size='small-normal' className='animate-fade text-paragraphcolor'>
                                 We offer a wide range of car rental services designed to meet all your transportation needs. Whether you’re traveling for business, planning a family vacation, or need a reliable vehicle for a special event, we have the perfect solution for you.
                             </TitleComponent>
-                            <TitleComponent size='small-normal' className='text-paragraphcolor'>
+                            <TitleComponent size='small-normal' className='animate-fade text-paragraphcolor'>
                                 We offer a comprehensive range of car rental services designed to meet the diverse needs of our clients. Whether you’re traveling for business, planning a family vacation, or need a reliable vehicle for a special event, our fleet and services are tailored to provide you with the perfect solution. Discover the various services we offer and why we are the preferred choice for car rentals.
                             </TitleComponent>
-                            <ul className='grid grid-cols-2 gap-6 max-l:grid-cols-1'>
+                            <ul className='animate-fade grid grid-cols-2 gap-6 max-l:grid-cols-1'>
                                 {ServiceListData.map((service, index) => (
                                     <li className='flex items-center gap-2' key={index}>
                                         <div className="flex items-center justify-center w-6 h-6 rounded-full bg-primary">
@@ -124,7 +124,7 @@ const ServiceDetail = () => {
                                     </li>
                                 ))}
                             </ul>
-                            <div className='grid grid-cols-4 gap-6 mt-6 pb-10 border-b border-borderPrimary max-l:grid-cols-2 max-m:grid-cols-1'>
+                            <div className='animate-fade grid grid-cols-4 gap-6 mt-6 pb-10 border-b border-borderPrimary max-l:grid-cols-2 max-m:grid-cols-1'>
                                 {ServiceGalleryData.map((image, index) => (
                                     <ImageComponent 
                                         key={index}
@@ -134,17 +134,13 @@ const ServiceDetail = () => {
                                     />
                                 ))}
                             </div>
-                            <div className="pt-10">
-                                <SectionTitle 
-                                    left={true}
-                                    title='Frequently Asked Questions'
-                                    heading='You need to know about service'
-                                    headingType='h2'
-                                />
-                                <div className="mt-10">
-                                    <Accordion item={ServiceFaqData} variant='secondary' />
-                                </div>
-                            </div>
+                            <SectionTitle 
+                                left={true}
+                                title='Frequently Asked Questions'
+                                heading='You need to know about service'
+                                headingType='h2'
+                            />
+                            <Accordion item={ServiceFaqData} variant='secondary' />
                         </div>
                     </div>
                 </div>
