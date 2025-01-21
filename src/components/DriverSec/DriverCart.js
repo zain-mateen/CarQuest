@@ -19,7 +19,10 @@ const DriverCart = ({ data }) => {
                 </div>
             </div>
             <div className="text-center">
-                <Link className='text-xl font-semibold text-white duration-500 hover:text-primary' to='/'>
+                <Link 
+                    className='text-xl font-semibold text-white duration-500 hover:text-primary'
+                    to={`/drivers/${data.id}`}
+                >
                     {data.heading}
                 </Link>
                 <TitleComponent size='base-normal' className='text-paragraphcolor mt-1'>

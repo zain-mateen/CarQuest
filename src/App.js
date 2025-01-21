@@ -18,9 +18,13 @@ import Blog from './pages/Blog';
 import BlogDetail from './pages/BlogDetail';
 import PricingPage from './pages/PricingPage';
 import ImageGallery from './pages/ImageGallery';
-import VideoGallery from './pages/VideoGallery'
+import VideoGallery from './pages/VideoGallery';
+import FaqPage from './pages/FaqPage';
+import TestimonialPage from './pages/TestimonialPage'
 
 import './App.css';
+import Drivers from './pages/Drivers';
+import DriverDetail from './pages/DriverDetail';
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -56,6 +60,10 @@ function App() {
             <Route path='/pricing' element={<PricingPage />} />
             <Route path='/image-gallery' element={<ImageGallery />} />
             <Route path='/video-gallery' element={<VideoGallery />} />
+            <Route path='/testimonials' element={<TestimonialPage />} />
+            <Route path='/faqs' element={<FaqPage />} />
+            <Route path='/drivers' element={<Drivers />} />
+            <Route path='/drivers/:id' element={<DriverDetail />} />
             <Route path='/contact' element={<ContactPage />} />
           </Routes>
           <Footer />
