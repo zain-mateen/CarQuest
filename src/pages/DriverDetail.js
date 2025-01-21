@@ -68,46 +68,29 @@ const DriverSingle = () => {
                                 />
                                 <div className='p-10 max-xl:p-8 max-m:p-6'>
                                     <div className="border-b border-borderPrimary pb-8 mb-8">
-                                        <TitleComponent 
-                                            type='h3' 
-                                            className='text-white'
-                                        >
+                                        <TitleComponent type='h3' className='text-white'>
                                             {DriverDetail.heading}
                                         </TitleComponent>
-                                        <TitleComponent 
-                                            size='extra-large-normal' 
-                                            className='text-paragraphcolor mt-2'
-                                        >
+                                        <TitleComponent size='extra-large-normal' className='text-paragraphcolor mt-2'>
                                             {DriverDetail.text}
                                         </TitleComponent>
                                     </div>
                                     <div className='border-b border-borderPrimary pb-8 mb-8'>
                                         <ul className="flex flex-col gap-5 max-m:gap-3">
                                             {ContactData.map(({ Heading, LinkText, Text }, index) => (
-                                                <li 
-                                                    className='flex items-center gap-2' 
-                                                    key={index}
-                                                >
+                                                <li className='flex items-center gap-2' key={index}>
                                                     {Heading && 
-                                                        <TitleComponent 
-                                                            size='large-semibold' 
-                                                            className='text-white'
-                                                        >
+                                                        <TitleComponent size='large-semibold' className='text-white'>
                                                             {Heading}
                                                         </TitleComponent>
                                                     }
                                                     {LinkText && 
-                                                        <Link 
-                                                            className='text-base font-medium text-paragraphcolor'
-                                                        >
+                                                        <Link className='text-base font-medium text-paragraphcolor'>
                                                             {LinkText}
                                                         </Link>
                                                     }
                                                     {Text && 
-                                                        <TitleComponent 
-                                                            size='base-medium' 
-                                                            className='text-paragraphcolor'
-                                                        >
+                                                        <TitleComponent size='base-medium' className='text-paragraphcolor'>
                                                             {Text}
                                                         </TitleComponent>
                                                     }
@@ -143,29 +126,16 @@ const DriverSingle = () => {
                                     descriptionStyles='mb-4 text-paragraphcolor'
                                     descriptionType='base-medium'
                                 />
-                                <TitleComponent 
-                                    size='base-medium' 
-                                    className='text-paragraphcolor'
-                                >
+                                <TitleComponent size='base-medium' className='text-paragraphcolor'>
                                     John brings over 15 years of professional driving experience to our team. His extensive knowledge of the city, coupled with his impeccable driving skills, ensures that you reach your destination safely and on time. John is known for his punctuality and professionalism, making him a favorite among our corporate clients.
                                 </TitleComponent>
                                 <ul className='flex flex-col gap-6 mt-12'>
                                     {DetailListData.map(({Heading, Text}, index) => (
-                                        <li 
-                                            className='flex items-center gap-2' 
-                                            key={index}
-                                        >
+                                        <li className='flex items-center gap-2' key={index}>
                                             <div className="flex items-center justify-center w-6 h-6 rounded-full bg-primary max-m:w-5 max-m:h-5">
-                                                <Check 
-                                                    scale={16} 
-                                                    weight='bold' 
-                                                    className='text-white' 
-                                                />
+                                                <Check scale={16} weight='bold' className='text-white' />
                                             </div>
-                                            <TitleComponent 
-                                                size='large-medium' 
-                                                className='text-white flex-1'
-                                            >
+                                            <TitleComponent size='large-medium' className='text-white flex-1'>
                                                 <span className='font-semibold mr-1'>{Heading}</span>{Text}
                                             </TitleComponent>
                                         </li>
@@ -183,21 +153,11 @@ const DriverSingle = () => {
                                 />
                                 <ul className='grid grid-cols-2 gap-4 max-m:grid-cols-1'>
                                     {FeatureListData.map((service, index) => (
-                                        <li 
-                                            className='flex items-center gap-2' 
-                                            key={index}
-                                        >
+                                        <li className='flex items-center gap-2' key={index}>
                                             <div className="flex items-center justify-center w-6 h-6 rounded-full bg-primary max-m:w-5 max-m:h-5">
-                                                <Check 
-                                                    scale={16} 
-                                                    weight='bold' 
-                                                    className='text-white' 
-                                                />
+                                                <Check scale={16} weight='bold' className='text-white' />
                                             </div>
-                                            <TitleComponent 
-                                                size='large-medium' 
-                                                className='text-white'
-                                            >
+                                            <TitleComponent size='large-medium' className='text-white'>
                                                 {service}
                                             </TitleComponent>
                                         </li>
@@ -236,22 +196,13 @@ const DriverSingle = () => {
                                     {TestimonialData.map((Message, index) => (
                                         <SwiperSlide key={index}>
                                             <QuoteIcon />
-                                            <TitleComponent 
-                                                size='base-medium' 
-                                                className='text-paragraphcolor my-6'
-                                            >
+                                            <TitleComponent size='base-medium' className='text-paragraphcolor my-6'>
                                                 {Message}
                                             </TitleComponent>
-                                            <TitleComponent 
-                                                size='extra-large-semibold' 
-                                                className='text-white'
-                                            >
+                                            <TitleComponent size='extra-large-semibold' className='text-white'>
                                                 {DriverDetail.heading}
                                             </TitleComponent>
-                                            <TitleComponent 
-                                                size='base-normal' 
-                                                className='text-paragraphcolor mt-2'
-                                            >
+                                            <TitleComponent size='base-normal' className='text-paragraphcolor mt-2'>
                                                 customers
                                             </TitleComponent>
                                         </SwiperSlide>

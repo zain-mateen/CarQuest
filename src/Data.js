@@ -941,7 +941,7 @@ export const DriversDetailData = [
         id: 'jordan-brown', 
         image: require('./images/team-3.webp'), 
         heading: 'Jordan Brown',
-        firstName: 'John', 
+        firstName: 'Jordan', 
         text: 'Distance Driver', 
     },
     { 
