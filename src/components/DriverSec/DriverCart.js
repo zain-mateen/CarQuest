@@ -1,16 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import TitleComponent from '../TitleComponent/TitleComponent'
-import { TeamSocialLinks } from '../../Data'
+import { SocialLinkData } from '../../Data'
 
 const DriverCart = ({ data }) => {
+    const excludeIcon = 'linkedin-logo';
+    const filteredIcons = SocialLinkData.filter((item) => item.id !== excludeIcon); 
+
     return (
         <div key={data.index} className='animate-fade flex flex-col gap-5 group'>
             <div className="relative overflow-hidden rounded-[20px]">
-                <img className='w-full h-full object-cover duration-500 group-hover:scale-110' src={data.image} alt={`${data.heading} img`} />
+                <Link to={`/drivers/${data.id}`}>
+                    <img className='w-full h-full object-cover duration-500 group-hover:scale-110' src={data.image} alt={`${data.heading} img`} />
+                </Link>
                 <div className="absolute -bottom-10 left-1/2 translate-x-[-50%] opacity-0 invisible backdrop-blur-[30px] rounded-[30px] duration-500 group-hover:bottom-5 group-hover:opacity-100 group-hover:visible">
                     <div className='flex items-center justify-between gap-5 py-3 px-6 max-2xl:gap-4'>
-                        {TeamSocialLinks.map(({ Icon, link }, index) => (
+                        {filteredIcons.map(({ Icon, link }, index) => (
                             <Link key={index} to={link}>
                                 <Icon className='text-white hover:text-primary duration-300 max-2xl:w-5' size={24} weight='fill' />
                             </Link>

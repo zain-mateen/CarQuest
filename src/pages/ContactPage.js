@@ -1,7 +1,7 @@
 import React from 'react'
 import InnerHeader from '../components/Header/InnerHeader'
 import TitleComponent from '../components/TitleComponent/TitleComponent'
-import { TeamSocialLinks } from '../Data'
+import { SocialLinkData } from '../Data'
 import { Link } from 'react-router-dom'
 import { PhoneCall, EnvelopeSimple, MapPin } from 'phosphor-react'
 
@@ -11,6 +11,8 @@ import ThemeButton from '../components/ThemeButton/ThemeButton'
 import SectionTitle from '../components/SectionTitle/SectionTitle'
 
 const ContactPage = () => {
+    const excludeIcon = 'linkedin-logo';
+    const filteredIcons = SocialLinkData.filter((item) => item.id !== excludeIcon);
 
     const ContactData = [
         { ctaText: '(+01) 789 854 856', Icon: PhoneCall },
@@ -40,7 +42,7 @@ const ContactPage = () => {
                                     ))}
                                 </ul>
                                 <div className='flex items-center gap-6'>
-                                    {TeamSocialLinks.map(({ Icon, to }, index) => (
+                                    {filteredIcons.map(({ Icon, to }, index) => (
                                         <Link key={index} to={to} className='flex group'>
                                             <Icon className='text-white group-hover:text-primary duration-300' size={30} />
                                         </Link>

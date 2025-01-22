@@ -24,8 +24,8 @@ const BlogDetail = () => {
     const { id } = useParams();
     const BlogDetail = BlogDetailData.find((item) => item.id === id)
 
-    const selectedIds = ['facebook-logo', 'instagram-logo', 'linkedin-logo'];
-    const filteredIcons = SocialLinkData.filter((item) => selectedIds.includes(item.id));
+    const excludeIcon = ['linkedin-logo', 'youtube-logo'];
+    const filteredIcons = SocialLinkData.filter((item) => !excludeIcon.includes(item.id));
 
     return (
         <>

@@ -911,7 +911,7 @@ export const BlogDetailData = [
         dateText: ' August 5, 2024',
         heading: 'The best apps for managing your car rental experience',
     },
-]
+];
 export const DriversData = [
     { id: 'john-smith', image: require('./images/team-1.webp'), heading: 'John Smith', text: 'Senior Chauffeur', },
     { id: 'taylor-smith', image: require('./images/team-2.webp'), heading: 'Taylor Smith', text: 'City Tour Guide', },
