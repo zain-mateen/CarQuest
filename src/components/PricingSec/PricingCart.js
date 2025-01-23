@@ -6,7 +6,7 @@ import ThemeButton from '../ThemeButton/ThemeButton'
 const PricingCart = ({ data }) => {
     return (
         <div 
-            className={`${data.pricingCartStyles} p-12 border border-borderPrimary rounded-3xl text-center max-xl:p-10 max-l:py-8 max-l:px-6`}
+            className={`${data.pricingCartStyles} p-12 border border-borderPrimary rounded-3xl text-center max-xl:p-10 max-l:py-6 max-l:px-3`}
             key={data.index}
         >
             <img 

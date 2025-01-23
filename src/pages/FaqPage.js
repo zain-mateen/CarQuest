@@ -78,7 +78,7 @@ const FaqPage = () => {
                             {faqSections.map(({ title, FaqId, data }, index) => (
                                 <div 
                                     key={index}
-                                    className='[&:not(:last-child)]:mb-12'
+                                    className='[&:not(:last-child)]:mb-20'
                                     id={FaqId}
                                 >
                                     <SectionTitle 
@@ -87,7 +87,7 @@ const FaqPage = () => {
                                         heading={title}
                                         headingType='h2'
                                     />
-                                    <div className="mt-10">
+                                    <div className="mt-6">
                                         <Accordion item={data} variant='secondary' />
                                     </div>
                                 </div>
