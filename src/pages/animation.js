@@ -150,7 +150,11 @@ const Animation = ({ children }) => {
         slideUpAnimation(".blog-page-sec", 2.1);
         slideUpAnimation(".blog-details-page", 2.1);
         slideUpAnimation(".car-page-sec", 2.1);
+        slideUpAnimation(".pricing-page-sec", 2.1);
+        slideUpAnimation(".img-gallery-page-sec", 2.1);
+        slideUpAnimation(".testimonials-page-sec", 2.1);
         scaleAnimation(".hero-sec", 0.5);
+        scaleAnimation(".map-scale");
         slideUpAnimation(".hero1-title", 1.5);
         animateText(".hero1-heading", 1.7);
         slideUpAnimation(".hero1-desc", 1.9);

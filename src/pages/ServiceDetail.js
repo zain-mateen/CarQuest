@@ -137,8 +137,10 @@ const ServiceDetail = () => {
                             <SectionTitle 
                                 left={true}
                                 title='Frequently Asked Questions'
+                                titleWrapperStyles="animate-fade"
                                 heading='You need to know about service'
                                 headingType='h2'
+                                headingStyles="services-heading"            
                             />
                             <Accordion item={ServiceFaqData} variant='secondary' />
                         </div>

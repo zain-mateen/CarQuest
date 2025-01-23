@@ -56,7 +56,7 @@ const DriverSingle = () => {
                 InnerPageSlash='/'
                 CurrentPage={DriverDetail.heading}
             />
-            <div className='py-28 max-xl:py-20 max-m:py-12'>
+            <div className='about-page-sec py-28 max-xl:py-20 max-m:py-12'>
                 <div className="container">
                     <div className='grid grid-cols-3 gap-8 max-xl:grid-cols-1 max-xl:gap-x-0'>
                         <div className="relative">

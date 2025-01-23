@@ -22,7 +22,7 @@ const TestimonialPage = () => {
                 Heading='Testimonials'
                 CurrentPage='Testimonials'
             />
-            <div className='py-28 max-xl:py-20 max-m:py-12'>
+            <div className='testimonials-page-sec py-28 max-xl:py-20 max-m:py-12'>
                 <div className="container">
                     <div className="grid grid-cols-3 gap-8 max-2xl:gap-6 max-xl:grid-cols-2 max-m:grid-cols-1">
                         {columnData.map((column, columnIndex) => (
