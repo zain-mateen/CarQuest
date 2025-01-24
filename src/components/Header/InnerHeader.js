@@ -22,11 +22,11 @@ const InnerHeader = ({ Heading, InnerPageLink, InnerPageLinkText, InnerPageSlash
                                     <Calendar 
                                         size={24} 
                                         weight='fill' 
-                                        className='text-primary' 
+                                        className='text-primary max-m:w-[18px]' 
                                     />
                                     <TitleComponent 
                                         size='large-semibold' 
-                                        className='text-white'
+                                        className='text-white max-m:!text-sm'
                                     >
                                         {DateText}
                                     </TitleComponent>
@@ -37,10 +37,10 @@ const InnerHeader = ({ Heading, InnerPageLink, InnerPageLinkText, InnerPageSlash
                                     <Tag 
                                         size={24} 
                                         weight='fill' 
-                                        className='text-primary' 
+                                        className='text-primary max-m:w-[18px]' 
                                     />
                                     <Link 
-                                        className='text-lg font-semibold text-white duration-500 hover:text-primary' 
+                                        className='text-lg font-semibold text-white duration-500 hover:text-primary max-m:text-sm' 
                                         to={RoutePageLink}
                                     >
                                         {RoutePageText}

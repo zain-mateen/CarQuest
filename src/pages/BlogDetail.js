@@ -53,9 +53,9 @@ const BlogDetail = () => {
                         <TitleComponent size='small-normal' className='text-paragraphcolor'>
                             The first step in the car rental process is selecting a reputable company. Major rental agencies like Hertz, Enterprise, Avis, and Budget are known for their extensive networks and reliability. However, don't overlook local rental companies, which can sometimes offer better rates or more personalized service. Always check reviews and compare prices online to find the best option for your needs.
                         </TitleComponent>
-                        <div className='flex gap-4 my-6 p-4 bg-secondary rounded-3xl max-xl:p-6 max-xl:rounded-3xl max-l:flex-col max-l:gap-2'>
+                        <div className='flex gap-4 my-6 p-4 bg-secondary rounded-3xl max-xl:p-6 max-xl:rounded-3xl max-l:flex-col max-l:gap-2 max-m:px-4 max-m:py-5'>
                             <QuoteIcon 
-                                svgStyles='w-14 h-14'
+                                svgStyles='w-14 h-14 max-m:w-10 max-m:h-10'
                             />
                             <TitleComponent size='base-semibold' className='flex-1 text-white'>
                                 Renting a car opens up a world of possibilities, turning a simple journey into an adventure. It's not just about getting from point A to point B it's about the freedom to explore, the comfort of choice, and the ease of travel. Whether you're discovering new cities.
@@ -80,19 +80,21 @@ const BlogDetail = () => {
                         <TitleComponent size='small-normal' className='text-paragraphcolor'>
                             Insurance is a crucial aspect of car rental. Rental companies usually offer several coverage options, including Collision Damage Waiver (CDW), Theft Protection, and Third-Party Liability. Your personal car insurance or credit card may already cover rental cars, so check with your provider before purchasing additional coverage. It's important to understand what is covered and any potential deductibles or exclusions.
                         </TitleComponent>
-                        <div className='flex items-center justify-between flex-wrap gap-6 border-y border-solid border-borderPrimary py-4 my-10'>
-                            <div className="flex items-center gap-3 max-l:gap-2.5 flex-wrap max-l:gap-y-5">
+                        <div className='flex items-center justify-between flex-wrap gap-6 border-y border-borderPrimary py-4 my-10 max-m:my-6'>
+                            <div className="flex flex-wrap items-center gap-3 max-l:gap-2.5">
                                 <TitleComponent size='base-semibold' className="text-white">Tags:</TitleComponent>
-                                {TagsData.map(({ id, label, to }) => (
-                                    <li key={id} className='flex'>
-                                        <Link
-                                            className="text-sm font-bold text-white py-1.5 px-3 bg-primary rounded-full duration-500 hover:bg-white hover:text-primary"
-                                            to={to}
-                                        >
-                                            {label}
-                                        </Link>
-                                    </li>
-                                ))}
+                                <ul className='flex flex-wrap items-center gap-3 max-l:gap-2.5'>
+                                    {TagsData.map(({ id, label, to }) => (
+                                        <li key={id} className='flex'>
+                                            <Link
+                                                className="text-sm font-bold text-white py-1.5 px-3 bg-primary rounded-full duration-500 hover:bg-white hover:text-primary"
+                                                to={to}
+                                            >
+                                                {label}
+                                            </Link>
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
                             <ul className='flex items-center gap-4'>
                                 {filteredIcons.map(({id, Icon, to}) => (
@@ -121,7 +123,7 @@ const BlogDetail = () => {
                                 <div className="grid grid-cols-3 gap-6 max-m:flex max-m:flex-col max-m:gap-y-5">
                                     {blogDetailFormData.map(({ id, label, type, placeholder, className, wrapperClass }) => (
                                         <div key={id} className={wrapperClass}>
-                                            <label htmlFor={id} className="text-lg font-medium text-paragraphcolor">
+                                            <label htmlFor={id} className="text-lg font-medium text-white">
                                                 {label}
                                             </label>
                                             {type === "textarea" ? (

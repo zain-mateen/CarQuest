@@ -54,17 +54,17 @@ const ContactPage = () => {
                             <img className="absolute bottom-0 right-0" src={ContactInformationImage} alt="Contact Info" />
                         </div>
                         <form className="flex flex-col gap-6">
-                            {['Full Name', 'Last Name', 'Email', 'Phone'].map((label, i) => (
-                                <div className="grid grid-cols-2 gap-5 max-l:grid-cols-1" key={i}>
-                                    <div className="flex flex-col gap-3 border-b border-secondary">
+                            <div className="grid grid-cols-2 gap-5 max-l:grid-cols-1">
+                                {['Full Name', 'Last Name', 'Email', 'Phone'].map((label, i) => (
+                                    <div className="flex flex-col gap-3 border-b border-secondary" key={i}>
                                         <label className="text-base font-semibold text-white">{label}</label>
                                         <input
                                             className="text-base font-semibold py-2 bg-transparent outline-none placeholder:text-paragraphcolor focus:border-black"
                                             placeholder={`Enter Your ${label}`}
                                         />
                                     </div>
-                                </div>
-                            ))}
+                                ))}
+                            </div>
                             <div className="flex flex-col gap-3 border-b border-secondary">
                                 <label className="text-base font-semibold text-white">Message</label>
                                 <textarea
