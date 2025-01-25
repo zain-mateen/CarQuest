@@ -43,7 +43,7 @@ const BlogDetail = () => {
                 <div className="container">
                     <div className='max-w-[1050px] mx-auto'>
                         <img 
-                            className='rounded-[46px] mb-10 w-full max-h-[600px] object-cover object-center max-xl:h-auto max-xl:rounded-3xl' 
+                            className='rounded-[46px] mb-10 w-full max-h-[600px] object-cover object-center max-xl:h-auto max-xl:rounded-3xl max-l:mb-6' 
                             src={BlogDetail.image} 
                             alt="Blog Car img" 
                         />

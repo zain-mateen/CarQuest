@@ -6,29 +6,6 @@ import SectionTitle from '../components/SectionTitle/SectionTitle';
 import Accordion from '../components/Accordion/Accordion';
 import { FaqData } from '../Data';
 
-// class ErrorBoundary extends React.Component {
-//     constructor(props) {
-//         super(props);
-//         this.state = { hasError: false };
-//     }
-
-//     static getDerivedStateFromError(error) {
-//         return { hasError: true };
-//     }
-
-//     componentDidCatch(error, errorInfo) {
-//         console.error("Error caught in ErrorBoundary: ", error, errorInfo);
-//     }
-
-//     render() {
-//         if (this.state.hasError) {
-//             return <h1>Something went wrong.</h1>;
-//         }
-
-//         return this.props.children; 
-//     }
-// }
-
 const ServiceBoxData = [
     { faqText: 'General Information', faqLink: '#general_information' },
     { faqText: 'Booking and Reservations', faqLink: '#booking_and_reservations' },
@@ -78,14 +55,14 @@ const FaqPage = () => {
                             {faqSections.map(({ title, FaqId, data }, index) => (
                                 <div 
                                     key={index}
-                                    className='[&:not(:last-child)]:mb-20'
+                                    className='[&:not(:last-child)]:mb-12'
                                     id={FaqId}
                                 >
                                     <SectionTitle 
                                         left={true}
-                                        title='FAQs'
                                         heading={title}
                                         headingType='h2'
+                                        headingStyles="faq-heading"
                                     />
                                     <div className="mt-6">
                                         <Accordion item={data} variant='secondary' />
