@@ -21,31 +21,33 @@ import ImageGallery from './pages/ImageGallery';
 import VideoGallery from './pages/VideoGallery';
 import FaqPage from './pages/FaqPage';
 import TestimonialPage from './pages/TestimonialPage'
-
-import './App.css';
 import Drivers from './pages/Drivers';
 import DriverDetail from './pages/DriverDetail';
+
+import './App.css';
 
 function App() {
   const [loading, setLoading] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
-    setLoading(true);
-    const timer = setTimeout(() => {
+    setTimeout(() => {
       setLoading(false);
-    }, 1500);
-
-    return () => clearTimeout(timer);
+    }, 2000);
+  }, []);
+  useEffect(() => {
+    setLoading(true);
+    const timeout = setTimeout(() => setLoading(false), 2000);
+    return () => clearTimeout(timeout);
   }, [location]);
   return (
     <>
-      <ScrollToTop/>
       <ProgressBar/>
       {loading ? (
         <LoaderComponent/>
       ) : (
         <Animation>
+          <ScrollToTop/>
           <Header />
           <Routes>
             <Route index element={<Home />} />
