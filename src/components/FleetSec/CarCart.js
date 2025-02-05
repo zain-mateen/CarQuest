@@ -18,7 +18,7 @@ const CarCart = ({ data }) => {
         <div className="border border-borderPrimary rounded-3xl p-5">
             <img src={data.image} alt={data.heading} className="w-full h-auto rounded-lg mb-4" />
             <Link className="inline-flex py-2.5 px-5 bg-borderPrimary rounded-full text-xs font-bold text-white uppercase tracking-wide mb-4">
-                {data.tagText}
+                {data.category}
             </Link>
             <Link 
                 to={`/cars/${data.id}`}

@@ -16,9 +16,8 @@ const ImageGallery = () => {
                 <div className="container">
                     <div className="grid grid-cols-3 gap-8 max-2xl:gap-6 max-xl:grid-cols-2 max-m:grid-cols-1">
                         {ImageGalleryData.map((item, index) => (
-                            <Link className="relative" key={index}>
+                            <Link className="relative overflow-hidden rounded-3xl max-m:rounded-xl" key={index}>
                                 <ImageComponent 
-                                    imageStyles='rounded-3xl max-m:rounded-xl'
                                     src={item.Image}
                                     alt='Car img'
                                 />

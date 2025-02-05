@@ -140,7 +140,7 @@ export const CarData = [
     {
         id: 'voyager-hybrid',
         image: require('./images/Voyager-Hybrid.webp'),
-        tagText: 'Electric Car',
+        category: 'Electric Car',
         heading: 'Voyager Hybrid',
         DoorText: '4',
         PassengerText: '2',
@@ -149,7 +149,7 @@ export const CarData = [
     {
         id: 'saphire-convertible',
         image: require('./images/Sapphire-Convertible.webp'),
-        tagText: 'Coupe Car',
+        category: 'Coupe Car',
         heading: 'Sapphire Convertible',
         DoorText: '4',
         PassengerText: '2',
@@ -158,7 +158,7 @@ export const CarData = [
     {
         id: 'harrier-wagon',
         image: require('./images/Harrier-Wagon.webp'),
-        tagText: 'Coupe Car',
+        category: 'Coupe Car',
         heading: 'Harrier Wagon',
         DoorText: '4',
         PassengerText: '2',
@@ -167,7 +167,7 @@ export const CarData = [
     {
         id: 'eclipse-sedan',
         image: require('./images/Eclipse-Sedan.webp'),
-        tagText: 'Coupe Car',
+        category: 'Coupe Car',
         heading: 'Eclipse Sedan',
         DoorText: '4',
         PassengerText: '2',
@@ -176,7 +176,7 @@ export const CarData = [
     {
         id: 'breeze-compact',
         image: require('./images/Breeze-Compact.webp'),
-        tagText: 'Convertible Car',
+        category: 'Convertible Car',
         heading: 'Breeze Compact',
         DoorText: '4',
         PassengerText: '2',
@@ -185,7 +185,7 @@ export const CarData = [
     {
         id: 'voyager-gt',
         image: require('./images/Voyager-GT.webp'),
-        tagText: 'luxury Car',
+        category: 'luxury Car',
         heading: 'Voyager GT',
         DoorText: '4',
         PassengerText: '2',
@@ -194,7 +194,7 @@ export const CarData = [
     {
         id: 'viper-sxt',
         image: require('./images/Viper-SXT.webp'),
-        tagText: 'Coupe Car',
+        category: 'Coupe Car',
         heading: 'Viper SXT',
         DoorText: '4',
         PassengerText: '2',
@@ -203,7 +203,7 @@ export const CarData = [
     {
         id: 'skyline-elite',
         image: require('./images/Skyline-Elite.webp'),
-        tagText: 'Convertible Car',
+        category: 'Convertible Car',
         heading: 'Skyline Elite',
         DoorText: '4',
         PassengerText: '2',
@@ -212,7 +212,7 @@ export const CarData = [
     {
         id: 'nova-glide',
         image: require('./images/Nova-Glide.webp'),
-        tagText: 'Convertible Car',
+        category: 'Convertible Car',
         heading: 'Nova Glide',
         DoorText: '4',
         PassengerText: '2',
@@ -221,7 +221,7 @@ export const CarData = [
     {
         id: 'meteor-gt',
         image: require('./images/Meteor-GT.webp'),
-        tagText: 'Sedan Car',
+        category: 'Sedan Car',
         heading: 'Meteor GT',
         DoorText: '4',
         PassengerText: '2',
@@ -230,7 +230,7 @@ export const CarData = [
     {
         id: 'gladiator-lx',
         image: require('./images/Gladiator-LX.webp'),
-        tagText: 'Convertible Car',
+        category: 'Convertible Car',
         heading: 'Gladiator LX',
         DoorText: '4',
         PassengerText: '2',
@@ -239,7 +239,7 @@ export const CarData = [
     {
         id: 'cobra-classic',
         image: require('./images/Cobra-Classic.webp'),
-        tagText: 'Luxury Car',
+        category: 'Luxury Car',
         heading: 'Cobra Classic',
         DoorText: '4',
         PassengerText: '2',
@@ -248,7 +248,7 @@ export const CarData = [
     {
         id: 'aurora-lx',
         image: require('./images/Aurora-LX.webp'),
-        tagText: 'Convertible Car',
+        category: 'Convertible Car',
         heading: 'Aurora LX',
         DoorText: '4',
         PassengerText: '2',
@@ -257,7 +257,7 @@ export const CarData = [
     {
         id: 'turbomax-speedster',
         image: require('./images/TurboMax-Speedster.webp'),
-        tagText: 'Convertible Car',
+        category: 'Convertible Car',
         heading: 'TurboMax Speedster',
         DoorText: '4',
         PassengerText: '2',
@@ -266,7 +266,7 @@ export const CarData = [
     {
         id: 'pioneer-compact',
         image: require('./images/Pioneer-Compact.webp'),
-        tagText: 'Luxury Car',
+        category: 'Luxury Car',
         heading: 'Pioneer Compact',
         DoorText: '4',
         PassengerText: '2',
@@ -275,7 +275,7 @@ export const CarData = [
     {
         id: 'phantom-drive',
         image: require('./images/Phantom-Drive.webp'),
-        tagText: 'Coupe Car',
+        category: 'Coupe Car',
         heading: 'Phantom Drive',
         DoorText: '4',
         PassengerText: '2',
@@ -284,7 +284,7 @@ export const CarData = [
     {
         id: 'falcon-x-cruiser',
         image: require('./images/Falcon-X-Cruiser.webp'),
-        tagText: 'Sedan Car',
+        category: 'Sedan Car',
         heading: 'Falcon X Cruiser',
         DoorText: '4',
         PassengerText: '2',
@@ -293,7 +293,7 @@ export const CarData = [
     {
         id: 'desert-storm',
         image: require('./images/Desert-Storm.webp'),
-        tagText: 'Convertible Car',
+        category: 'Convertible Car',
         heading: 'Desert Storm',
         DoorText: '4',
         PassengerText: '2',
@@ -302,7 +302,7 @@ export const CarData = [
     {
         id: 'eclipse-sport-3000',
         image: require('./images/Eclipse-Sport-3000.webp'),
-        tagText: 'Sport Car',
+        category: 'Sport Car',
         heading: 'Eclipse Sport 3000',
         DoorText: '4',
         PassengerText: '2',

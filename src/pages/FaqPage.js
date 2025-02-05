@@ -62,7 +62,6 @@ const FaqPage = () => {
                                         left={true}
                                         heading={title}
                                         headingType='h2'
-                                        headingStyles="faq-heading"
                                     />
                                     <div className="mt-6">
                                         <Accordion item={data} variant='secondary' />

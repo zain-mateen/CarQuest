@@ -59,7 +59,7 @@ const ContactPage = () => {
                                     <div className="flex flex-col gap-3 border-b border-secondary" key={i}>
                                         <label className="text-base font-semibold text-white">{label}</label>
                                         <input
-                                            className="text-base font-semibold py-2 bg-transparent outline-none placeholder:text-paragraphcolor focus:border-black"
+                                            className="text-base font-semibold text-paragraphcolor py-2 bg-transparent outline-none placeholder:text-paragraphcolor focus:border-black"
                                             placeholder={`Enter Your ${label}`}
                                         />
                                     </div>
@@ -68,7 +68,7 @@ const ContactPage = () => {
                             <div className="flex flex-col gap-3 border-b border-secondary">
                                 <label className="text-base font-semibold text-white">Message</label>
                                 <textarea
-                                    className="text-base h-[200px] font-semibold py-2 bg-transparent outline-none resize-none placeholder:text-paragraphcolor focus:border-black"
+                                    className="text-base h-[200px] font-semibold text-paragraphcolor py-2 bg-transparent outline-none resize-none placeholder:text-paragraphcolor focus:border-black"
                                     placeholder="Enter Your Message"
                                     rows="4"
                                 />
